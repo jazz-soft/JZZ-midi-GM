@@ -1,0 +1,31 @@
+{
+  "name": "jzz-midi-gm",
+  "description": "General MIDI instrument names",
+  "authors": [
+    "jazz-soft (http://jazz-soft.net/)"
+  ],
+  "main": "javascript/JZZ.midi.GM.js",
+  "moduleType": [
+    "amd",
+    "node",
+    "globals"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "MIDI",
+    "midi",
+    "General MIDI"
+  ],
+  "homepage": "https://github.com/jazz-soft/JZZ-midi-GM",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "minified",
+    "test.*",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "jzz": "^0.4.4"
+  }
+}
