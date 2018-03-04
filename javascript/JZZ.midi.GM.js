@@ -10,6 +10,8 @@
   }
 })(this, function(JZZ) {
 
+var i;
+
 var _group = ['Piano', 'Chromatic Percussion', 'Organ', 'Guitar', 'Bass', 'Strings', 'Ensemble', 'Brass', 'Reed', 'Pipe', 'Synth Lead', 'Synth Pad', 'Synth Effects', 'Ethnic', 'Percussive', 'Sound Effects'];
 
 var _instr = [
@@ -42,8 +44,35 @@ var _perc = [
 'Jingle Bell', 'Bell Tree', 'Castanets', 'Mute Surdo', 'Open Surdo'
 ];
 
-JZZ.MIDI.programName = function(n) { if (n >= 0 && n <= 127) return _instr[n]; }
-JZZ.MIDI.groupName = function(n) { if (n >= 0 && n <= 127) return _group[n >> 3]; }
-JZZ.MIDI.percussionName = function(n) { if (n >= 27 && n <= 87) return _perc[n - 27]; }
+function _strip(s) { return s.toString().toLowerCase().replace(/\W+/g, ' ').replace(/^\s+|\s+$/g, ''); }
+
+var _program = {};
+for (i = 0; i < _instr.length; i++) _program[_strip(_instr[i])] = i;
+for (i = 0; i < _group.length; i++) _program[_strip(_group[i])] = i * 8;
+var _percussion = {};
+for (i = 0; i < _perc.length; i++) _percussion[_strip(_perc[i])] = i + 27;
+
+var _noteValue = JZZ.MIDI.noteValue;
+
+JZZ.MIDI.programName = function(n) { if (n >= 0 && n <= 127) return _instr[n]; };
+JZZ.MIDI.groupName = function(n) { if (n >= 0 && n <= 127) return _group[n >> 3]; };
+JZZ.MIDI.percussionName = function(n) { if (n >= 27 && n <= 87) return _perc[n - 27]; };
+
+JZZ.MIDI.programValue = function(x) {
+  if (x == parseInt(x)) return x;
+  var s = _strip(x);
+  var n = _program[s];
+  if (typeof n != 'undefined') return n;
+  return x;
+};
+
+JZZ.MIDI.noteValue = function(x) {
+  var n = _noteValue(x);
+  if (typeof n != 'undefined') return n;
+  var s = _strip(x);
+  n = _percussion[s];
+  if (typeof n != 'undefined') return n;
+  return x;
+};
 
 });
