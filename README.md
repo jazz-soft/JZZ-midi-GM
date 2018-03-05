@@ -40,8 +40,10 @@ Map MIDI note value to General MIDI percussion name.
 
     console.log(JZZ.MIDI.programName(60));
     // => 'French Horn'
+
     console.log(JZZ.MIDI.groupName(60));
     // => 'Brass'
+
     console.log(JZZ.MIDI.percussionName(60));
     // => 'Hi Bongo'
 
@@ -58,8 +60,10 @@ If the return value is negative, it's the percussion note value with a minus sig
 
     console.log(JZZ.MIDI.programName(JZZ.MIDI.programValue('piano')));
     // => 'Acoustic Grand Piano'
+
     console.log(JZZ.MIDI.percussionName(JZZ.MIDI.noteValue('snare')));
     // => 'Acoustic Snare'
+
     var n = JZZ.MIDI.guessValue('crash');
     if (n < 0) console.log(JZZ.MIDI.percussionName(-n));
     else console.log(JZZ.MIDI.programName(n));
@@ -70,8 +74,8 @@ If the return value is negative, it's the percussion note value with a minus sig
 In addition, when the module is loaded, JZZ helper functions start to understand instrument names where appropriate.
 
     JZZ().openMidiOut()
-      .program(0, 'accordion')
-      .noteOn(0, 'C#6', 127);
+      .program(0, 'accordion').noteOn(0, 'C#6', 100)
+      .noteOn(9, 'cowbell', 127);
 
 ## More information
 
