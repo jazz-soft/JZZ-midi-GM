@@ -44,13 +44,72 @@ var _perc = [
 'Jingle Bell', 'Bell Tree', 'Castanets', 'Mute Surdo', 'Open Surdo'
 ];
 
-function _strip(s) { return s.toString().toLowerCase().replace(/\W+/g, ' ').replace(/^\s+|\s+$/g, ''); }
+var _more = {
+'Hammond': 17, 'Keyboard': 18, 'Uke': 24, 'Ukulele': 24, 'Fuzz': 30, 'Sax': 66, 'Saxophone': 66,
+'Soprano Saxophone': 64, 'Alto Saxophone': 65, 'Tenor Saxophone': 66, 'Baritone Saxophone': 67
+};
+
+function _strip(s) { return ' ' + s.toString().toLowerCase().replace(/\W+/g, ' ').trim() + ' '; }
 
 var _program = {};
 for (i = 0; i < _instr.length; i++) _program[_strip(_instr[i])] = i;
 for (i = 0; i < _group.length; i++) _program[_strip(_group[i])] = i * 8;
+for (i in _more) if (_more.hasOwnProperty(i)) _program[_strip(i)] = _more[i];
+
 var _percussion = {};
 for (i = 0; i < _perc.length; i++) _percussion[_strip(_perc[i])] = i + 27;
+
+function _score(a, b) {
+  var c, i, j, x, y, z;
+  if (a.length > b.length) { c = a; a = b; b = c; }
+  var m = [];
+  for (i = 0; i < a.length; i++) {
+    m[i] = [];
+    if (!i) {
+      for (j = 0; j < b.length; j++) {
+        m[i][j] = a[i] == b[j] ? 2 : 0;
+      }
+    }
+    else {
+      m[i][0] = a[i] == b[0] ? 2 : 0;
+      for (j = 1; j < b.length; j++) {
+        x = m[i - 1][j] - (a[i] == ' ' ? 1 : 2);
+        y = m[i][j - 1] - (b[j] == ' ' ? 1 : 2);
+        z = m[i - 1][j - 1] + (a[i] == b[j] ? 2 : -2);
+        if (x < 0) x = 0;
+        if (x < y) x = y;
+        if (x < z) x = z;
+        m[i][j] = x;
+      }
+    }
+  }
+  c = 0;
+  while (m.length) {
+    x = 0; y = 0; z = 0;
+    for (i = 0; i < m.length; i++) for (j = 0; j < m[0].length; j++) {
+      if (z < m[i][j]) {
+        x = i; y = j; z = m[i][j];
+      }
+    }
+    if (!z) break;
+    c += z;
+    m.splice(x, 1);
+    for (i = 0; i < m.length; i++) m[i].splice(y);
+  }
+  return c;
+}
+
+function _search(h, s) {
+  var k, l, m, n, q;
+  l = 0; m = 0; n = 0;
+  for (k in h) if (h.hasOwnProperty(k)) {
+    q = _score(s, k);
+    if (q > n || q == n && k.length < l) {
+      l = k.length; m = h[k]; n = q;
+    }
+  }
+  return [n, m];
+}
 
 var _noteValue = JZZ.MIDI.noteValue;
 
@@ -63,7 +122,8 @@ JZZ.MIDI.programValue = function(x) {
   var s = _strip(x);
   var n = _program[s];
   if (typeof n != 'undefined') return n;
-  return x;
+  var guess = _search(_program, s);
+  return guess[1];
 };
 
 JZZ.MIDI.noteValue = function(x) {
@@ -72,7 +132,22 @@ JZZ.MIDI.noteValue = function(x) {
   var s = _strip(x);
   n = _percussion[s];
   if (typeof n != 'undefined') return n;
-  return x;
+  var guess = _search(_percussion, s);
+  return guess[1];
+};
+
+JZZ.MIDI.guessValue = function(x) {
+  if (x == parseInt(x) && x >= 0 && x <= 127) return x;
+  var n = _noteValue(x);
+  if (typeof n != 'undefined') return -n;
+  var s = _strip(x);
+  n = _program[s];
+  if (typeof n != 'undefined') return n;
+  n = _percussion[s];
+  if (typeof n != 'undefined') return -n;
+  var a = _search(_program, s);
+  var b = _search(_percussion, s);
+  return b[0] > a[0] ? -b[1] : a[1];
 };
 
 });
