@@ -83,6 +83,7 @@ function _score(a, b) {
       }
     }
   }
+  for (i = 0; i < a.length; i++) for (j = 0; j < b.length; j++) m[i][j] = m[i][j] > 2 ? m[i][j] - 2 : 0;
   c = 0;
   while (m.length) {
     x = 0; y = 0; z = 0;
