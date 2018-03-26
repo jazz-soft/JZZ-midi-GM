@@ -49,7 +49,10 @@ var _more = {
 'Soprano Saxophone': 64, 'Alto Saxophone': 65, 'Tenor Saxophone': 66, 'Baritone Saxophone': 67
 };
 
-function _strip(s) { return ' ' + s.toString().toLowerCase().replace(/\W+/g, ' ').trim() + ' '; }
+function _strip(s) {
+  if (typeof s == 'undefined') s = '';
+  return ' ' + s.toString().toLowerCase().replace(/\W+/g, ' ').trim() + ' ';
+}
 
 var _program = {};
 for (i = 0; i < _instr.length; i++) _program[_strip(_instr[i])] = i;

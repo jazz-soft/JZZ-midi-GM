@@ -1,6 +1,6 @@
 {
   "name": "jzz-midi-gm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "General MIDI instrument names",
   "main": "javascript/JZZ.midi.GM.js",
   "scripts": {
@@ -13,7 +13,7 @@
   ],
   "author": "jazz-soft (http://jazz-soft.net/)",
   "dependencies": {
-    "jzz": "^0.4.4"
+    "jzz": "^0.4.5"
   },
   "devDependencies": {
     "grunt": "^1.0.2",
