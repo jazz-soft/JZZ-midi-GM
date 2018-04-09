@@ -1,6 +1,6 @@
 {
   "name": "jzz-midi-gm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "General MIDI instrument names",
   "main": "javascript/JZZ.midi.GM.js",
   "scripts": {
