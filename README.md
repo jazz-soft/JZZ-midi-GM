@@ -80,8 +80,8 @@ If the return value is negative, it's the percussion note value with a minus sig
 In addition, when the module is loaded, JZZ helper functions start to understand instrument names where appropriate.
 
     JZZ().openMidiOut()
-      .program(0, 'accordion').noteOn(0, 'C#6', 100)
-      .noteOn(9, 'cowbell', 127);
+      .ch(0).program('accordion').noteOn('C#6', 100)
+      .ch(9).noteOn('cowbell', 127);
 
 ## More information
 
