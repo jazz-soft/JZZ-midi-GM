@@ -13,7 +13,7 @@
   ],
   "author": "jazz-soft (http://jazz-soft.net/)",
   "dependencies": {
-    "jzz": "^0.4.5"
+    "jzz": "^0.4.9"
   },
   "devDependencies": {
     "grunt": "^1.0.2",
