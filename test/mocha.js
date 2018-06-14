@@ -27,7 +27,7 @@ describe('JZZ.MIDI.groupName()', function() {
 });
 
 describe('JZZ.MIDI.percussionName()', function() {
-  it('0 -> Piano', function() {
+  it('0 -> undefined', function() {
     assert.equal(JZZ.MIDI.percussionName(0), undefined);
   });
   it('33 -> Metronome Click', function() {

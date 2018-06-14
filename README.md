@@ -2,6 +2,8 @@
 
 ## General MIDI instrument names: MIDI to string / string to MIDI
 
+[![Build Status](https://travis-ci.org/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.org/jazz-soft/JZZ-midi-GM)
+
 ## Install
 
 [**npm install jzz-midi-gm**](https://www.npmjs.com/package/jzz-midi-gm)  
