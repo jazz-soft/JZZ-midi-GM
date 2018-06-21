@@ -3,6 +3,7 @@
 ## General MIDI instrument names: MIDI to string / string to MIDI
 
 [![Build Status](https://travis-ci.org/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.org/jazz-soft/JZZ-midi-GM)
+[![Coverage Status](https://coveralls.io/repos/github/jazz-soft/JZZ-midi-GM/badge.svg?branch=master)](https://coveralls.io/github/jazz-soft/JZZ-midi-GM?branch=master)
 
 ## Install
 
