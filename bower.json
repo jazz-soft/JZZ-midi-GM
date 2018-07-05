@@ -2,7 +2,7 @@
   "name": "jzz-midi-gm",
   "description": "General MIDI instrument names",
   "authors": [
-    "jazz-soft (http://jazz-soft.net/)"
+    "jazz-soft (https://jazz-soft.net/)"
   ],
   "main": "javascript/JZZ.midi.GM.js",
   "moduleType": [
