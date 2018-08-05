@@ -2,12 +2,13 @@
 
 ## General MIDI instrument names: MIDI to string / string to MIDI
 
+[![npm](https://img.shields.io/npm/v/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![Build Status](https://travis-ci.org/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.org/jazz-soft/JZZ-midi-GM)
 [![Coverage Status](https://coveralls.io/repos/github/jazz-soft/JZZ-midi-GM/badge.svg?branch=master)](https://coveralls.io/github/jazz-soft/JZZ-midi-GM?branch=master)
 
 ## Install
 
-[**npm install jzz-midi-gm**](https://www.npmjs.com/package/jzz-midi-gm)  
+**npm install jzz-midi-gm**  
 or **bower install jzz-midi-gm**  
 or **yarn add jzz-midi-gm**  
 or get the full development version and minified scripts from [**GitHub**](https://github.com/jazz-soft/JZZ-midi-GM)
