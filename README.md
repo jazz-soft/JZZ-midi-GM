@@ -8,9 +8,9 @@
 
 ## Install
 
-**npm install jzz-midi-gm**  
-or **bower install jzz-midi-gm**  
-or **yarn add jzz-midi-gm**  
+`npm install jzz-midi-gm`  
+or `bower install jzz-midi-gm`  
+or `yarn add jzz-midi-gm`  
 or get the full development version and minified scripts from [**GitHub**](https://github.com/jazz-soft/JZZ-midi-GM)
 
 ## Usage
