@@ -52,3 +52,12 @@ describe('JZZ.MIDI.noteValue()', function() {
     assert.equal(JZZ.MIDI.percussionName(JZZ.MIDI.noteValue('snare')), 'Acoustic Snare');
   });
 });
+
+describe('JZZ.MIDI.guessValue()', function() {
+  it('Hapsicord -> Harpsichord', function() {
+    assert.equal(JZZ.MIDI.programName(JZZ.MIDI.guessValue('Hapsicord')), 'Harpsichord');
+  });
+  it('bongA -> Hi Bongo', function() {
+    assert.equal(JZZ.MIDI.percussionName(-JZZ.MIDI.guessValue('bongA')), 'Hi Bongo');
+  });
+});
