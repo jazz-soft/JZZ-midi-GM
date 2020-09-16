@@ -4,7 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![npm](https://img.shields.io/npm/dt/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
-[![Build Status](https://travis-ci.org/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.org/jazz-soft/JZZ-midi-GM)
+[![Build Status](https://travis-ci.com/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.com/jazz-soft/JZZ-midi-GM)
 [![Coverage Status](https://coveralls.io/repos/github/jazz-soft/JZZ-midi-GM/badge.svg?branch=master)](https://coveralls.io/github/jazz-soft/JZZ-midi-GM?branch=master)
 
 ## Install
