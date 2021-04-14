@@ -4,7 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![npm](https://img.shields.io/npm/dt/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
-[![Build Status](https://travis-ci.com/jazz-soft/JZZ-midi-GM.svg?branch=master)](https://travis-ci.com/jazz-soft/JZZ-midi-GM)
+[![build](https://github.com/jazz-soft/JZZ-midi-GM/actions/workflows/build.yml/badge.svg)](https://github.com/jazz-soft/JZZ-midi-GM/actions)
 [![Coverage Status](https://coveralls.io/repos/github/jazz-soft/JZZ-midi-GM/badge.svg?branch=master)](https://coveralls.io/github/jazz-soft/JZZ-midi-GM?branch=master)
 
 ## Install
@@ -113,4 +113,3 @@ JZZ().openMidiOut()
 ## More information
 
 Please visit [**https://jazz-soft.net**](https://jazz-soft.net) for more information.  
-Your questions and comments are welcome [**here**](https://jazz-soft.org).
