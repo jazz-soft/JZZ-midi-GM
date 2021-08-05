@@ -4,6 +4,10 @@ module.exports = function(grunt) {
     jshint: {
         all: ['javascript/*.js']
     },
+    assemble: {
+      data: 'data',
+      script: 'javascript/JZZ.midi.GM.js'
+    },
     uglify: {
       javascript: {
         expand: true,
@@ -15,5 +19,6 @@ module.exports = function(grunt) {
   });
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', ['jshint', 'uglify']);
+  grunt.registerTask('assemble', require('./data/assemble.js')(grunt));
+  grunt.registerTask('default', ['assemble', 'jshint', 'uglify']);
 };
