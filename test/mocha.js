@@ -76,6 +76,6 @@ describe('JZZ.MIDI.guessValue()', function() {
 
 describe('JZZ.MIDI.GM', function() {
   it('allGS()', function() {
-    console.log(JZZ.MIDI.GM.allGS());
+    JZZ.MIDI.GM.allGS();
   });
 });
