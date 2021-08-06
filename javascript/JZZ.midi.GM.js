@@ -250,7 +250,15 @@ function _search(h, s) {
 
 var _noteValue = JZZ.MIDI.noteValue;
 
-JZZ.MIDI.programName = function(n) { if (n >= 0 && n <= 127) return _instr[n]; };
+JZZ.MIDI.programName = function(n, m, l) {
+  var s;
+  if (n >= 0 && n <= 127) {
+    if (typeof m == 'undefined' && typeof l == 'undefined') return _instr[n];
+    if (!l) s = _gs[n][m];
+    if (s) return s;
+    return _instr[n] + ' *';
+  }
+};
 JZZ.MIDI.groupName = function(n) { if (n >= 0 && n <= 127) return _group[n >> 3]; };
 JZZ.MIDI.percussionName = function(n) { if (n >= 27 && n <= 87) return _perc[n - 27]; };
 

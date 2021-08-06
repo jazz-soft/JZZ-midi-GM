@@ -12,6 +12,18 @@ describe('JZZ.MIDI.programName()', function() {
   it('200 -> undefined', function() {
     assert.equal(JZZ.MIDI.programName(200), undefined);
   });
+  it('123 -> Bird Tweet', function() {
+    assert.equal(JZZ.MIDI.programName(123), 'Bird Tweet');
+  });
+  it('123 0 0 -> Bird', function() {
+    assert.equal(JZZ.MIDI.programName(123, 0, 0), 'Bird');
+  });
+  it('123 1 0 -> Dog', function() {
+    assert.equal(JZZ.MIDI.programName(123, 1, 0), 'Dog');
+  });
+  it('123 1 1 -> Bird Tweet *', function() {
+    assert.equal(JZZ.MIDI.programName(123, 1, 1), 'Bird Tweet *');
+  });
 });
 
 describe('JZZ.MIDI.groupName()', function() {
