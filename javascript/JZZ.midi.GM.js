@@ -295,4 +295,11 @@ JZZ.MIDI.guessValue = function(x) {
   return b[0] > a[0] ? -b[1] : a[1];
 };
 
+JZZ.MIDI.GM = {};
+JZZ.MIDI.GM.allGS = function() {
+  var ret = [];
+  for (var i = 0; i < 128; i++) for (var k in _gs[i]) if (_gs[i].hasOwnProperty(k)) ret.push([i, parseInt(k), 0]);
+  return ret;
+};
+
 });

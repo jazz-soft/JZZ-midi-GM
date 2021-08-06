@@ -73,3 +73,9 @@ describe('JZZ.MIDI.guessValue()', function() {
     assert.equal(JZZ.MIDI.percussionName(-JZZ.MIDI.guessValue('bongA')), 'Hi Bongo');
   });
 });
+
+describe('JZZ.MIDI.GM', function() {
+  it('allGS()', function() {
+    console.log(JZZ.MIDI.GM.allGS());
+  });
+});
