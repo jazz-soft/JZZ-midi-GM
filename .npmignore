@@ -5,4 +5,5 @@ data
 coverage
 bower.json
 Gruntfile.js
-test.*
+test*
+!test
