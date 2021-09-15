@@ -1,14 +1,14 @@
 0
 	0	Piano 1
-	1	UprightPiano
+	1	Upright Piano
 	2	Mild Piano
-	8	Upright P w
+	8	Upright Piano w
 	9	Mild Piano w
 	16	European Pf
-	24	Piano + Str.
-	25	Piano + Str2
-	26	Piano+Choir1
-	27	Piano+Choir2
+	24	Piano + Strings
+	25	Piano + Strings 2
+	26	Piano + Choir 1
+	27	Piano + Choir 2
 1
 	0	Piano 2
 	1	Pop Piano
@@ -20,53 +20,53 @@
 	0	Piano 3
 	1	EG+Rhodes 1
 	2	EG+Rhodes 2
-	8	Piano 3w
+	8	Piano 3 w
 3
 	0	Honky-tonk
 	8	Honky-tonk 2
 4
-	0	E.Piano 1
-	8	St.Soft EP
-	9	Cho. E.Piano
-	10	SilentRhodes
-	16	FM+SA EP
-	17	Dist E.Piano
+	0	Electric Piano 1
+	8	St.Soft Electric Piano
+	9	Cho. Electric Piano
+	10	Silent Rhodes
+	16	FM+SA Electric Piano
+	17	Dist Electric Piano
 	24	Wurly
 	25	Hard Rhodes
 	26	Mellow Rhodes
 5
-	0	E.Piano 2
-	1	E.Piano 3
-	8	Detuned EP 2
-	9	Detuned EP 3
-	10	EP Legend
-	16	St.FM EP
-	24	Hard FM EP
-	32	EP Phase
+	0	Electric Piano 2
+	1	Electric Piano 3
+	8	Detuned Electric Piano 2
+	9	Detuned Electric Piano 3
+	10	Electric Piano Legend
+	16	St.FM Electric Piano
+	24	Hard FM Electric Piano
+	32	Electric Piano Phase
 6
 	0	Harpsichord
 	1	Harpsichord 2
 	2	Harpsichord 3
-	8	Coupled Hps.
-	16	Harpsi.w
-	24	Harpsi.o
-	32	Synth Harpsi
+	8	Coupled Harpsichord
+	16	Harpsichord w
+	24	Harpsichord o
+	32	Synth Harpsichord
 7
-	0	Clav.
-	1	Clav. 2
-	2	Atk Clav.1
-	3	Atk Clav.2
-	8	Comp Clav.
-	16	Reso Clav.
-	17	Phase Clav
-	24	Clav.o
-	32	Analog Clav.
-	33	JP8 Clav. 1
-	35	JP8 Clav. 2
-	36	SynRingClav.
-	37	SynDistClav.
-	38	JP8000 Clav.
-	39	Pulse Clav
+	0	Clavinet
+	1	Clavinet 2
+	2	Atk Clavinet 1
+	3	Atk Clavinet 2
+	8	Comp Clavinet
+	16	Reso Clavinet
+	17	Phase Clavinet
+	24	Clavinet o
+	32	Analog Clavinet
+	33	JP8 Clavinet 1
+	35	JP8 Clavinet 2
+	36	Synth Ring Clavinet
+	37	Synth Dist Clavinet
+	38	JP8000 Clavinet
+	39	Pulse Clavinet
 
 8
 	0	Celesta
@@ -79,7 +79,7 @@
 	8	St.Music Box
 11
 	0	Vibraphone
-	1	Pop Vibe.
+	1	Pop Vibraphone
 	8	Vibraphone w
 	9	Vibraphones
 12
@@ -92,7 +92,7 @@
 	0	Xylophone
 	8	Xylophone w
 14
-	0	Tubular Bell
+	0	Tubular Bells
 	8	Church Bell
 	9	Carillon
 	10	Church Bell 2
@@ -139,32 +139,32 @@
 17
 	0	Organ 2
 	1	Jazz Organ
-	2	E.Organ 16+2
+	2	Electric Organ 16+2
 	3	Jazz Organ 2
 	4	Jazz Organ 3
 	5	Jazz Organ 4
 	6	Jazz Organ 5
 	7	Jazz Organ 6
-	8	Chorus Or.2
+	8	Chorus Organ 2
 	9	Octave Organ
-	32	Perc. Organ
-	33	Perc.Organ 2
-	34	Perc.Organ 3
-	35	Perc.Organ 4
+	32	Percussive Organ
+	33	Percussive Organ 2
+	34	Percussive Organ 3
+	35	Percussive Organ 4
 18
 	0	Organ 3
-	8	Rotary Org. 1
-	16	Rotary Org.S
+	8	Rotary Organ 1
+	16	Rotary Organ S
 	17	Rock Organ 1
 	18	Rock Organ 2
-	24	Rotary Org.F
+	24	Rotary Organ F
 19
-	0	Church Org.1
-	8	Church Org.2
-	16	Church Org.3
+	0	Church Organ 1
+	8	Church Organ 2
+	16	Church Organ 3
 	24	Organ Flute
 	32	Trem.Flute
-	33	Theater Org.
+	33	Theater Organ
 20
 	0	Reed Organ
 	8	Wind Organ
@@ -172,10 +172,10 @@
 21
 	0	Accordion Fr
 	8	Accordion It
-	9	Dist. Accord
-	16	Cho. Accord
-	24	Hard Accord
-	25	Soft Accord
+	9	Dist. Accordion
+	16	Cho. Accordion
+	24	Hard Accordion
+	25	Soft Accordion
 22
 	0	Harmonica
 	1	Harmonica 2
@@ -187,131 +187,131 @@
 	16	Bandoneon 3
 
 24
-	0	Nylon-str.Gt
+	0	Nylon String Guitar
 	8	Ukulele
-	16	Nylon Gt.o
+	16	Nylon String Guitar o
 	24	Velo Harmnix
-	32	Nylon Gt.2
-	40	Lequint Gt.
+	32	Nylon String Guitar 2
+	40	Lequint Guitar
 25
-	0	Steel-str.Gt
-	8	12-str.Gt
-	9	Nylon+Steel
-	10	Atk Steel Gt
+	0	Steel String Guitar
+	8	12-String Guitar
+	9	Nylon + Steel String Guitar
+	10	Atk Steel String Guitar
 	16	Mandolin
 	17	Mandolin 2
-	18	MandolinTrem
-	32	Steel Gt.2
-	33	Steel + Body
+	18	Mandolin Tremolo
+	32	Steel String Guitar 2
+	33	Steel String Guitar with Body Sound
 26
-	0	Jazz Gt.
-	1	Mellow Gt.
-	8	Pedal Steel
+	0	Jazz Guitar
+	1	Mellow Guitar
+	8	Pedal Steel Guitar
 27
-	0	Clean Gt.
+	0	Clean Guitar
 	1	Clean Half
 	2	Open Hard 1
 	3	Open Hard 2
-	4	JC Clean Gt.
-	5	Atk CleanGt.
-	8	Chorus Gt.
-	9	JC Chorus Gt
-	16	TC FrontPick
+	4	JC Clean Guitar
+	5	Atk Clean Guitar
+	8	Chorus Guitar
+	9	JC Chorus Guitar
+	16	TC Front Pick
 	17	TC Rear Pick
 	18	TC Clean ff
 	19	TC Clean 2:
 	20	LP Rear Pick
 	21	LP Rear 2
-	22	LP RearAtack
-	23	Mid Tone GTR
+	22	LP Rear Atack
+	23	Mid Tone Guitar
 	24	Chung Ruan
 	25	Chung Ruan 2
 28
-	0	Muted Gt.
-	1	Muted Dis.Gt
-	2	TC Muted Gt.
-	8	Funk Pop
-	16	Funk Gt.2
+	0	Muted Guitar
+	1	Muted Dis. 
+	2	TC Muted Guitar
+	8	Funk Pop Guitar
+	16	Funk Guitar 2
 	24	Jazz Man
 29
-	0	Overdrive Gt
-	1	Overdrive 2
-	2	Overdrive 3
+	0	Overdrive Guitar
+	1	Overdrive Guitar 2
+	2	Overdrive Guitar 3
 	3	More Drive
 	4	Guitar Pinch
 	5	Attack Drive
-	8	LP OverDrvGt
-	9	LP OverDrv:
+	8	LP Overdrive Guitar
+	9	LP Overdrive Guitar:
 	10	LP Half Drv
 	11	LP Half Drv2
 	12	LP Chorus
 30
-	0	DistortionGt
-	1	Dist. Gt2 :
+	0	Distortion Guitar
+	1	Distortion Guitar 2:
 	2	Dazed Guitar
-	3	Distortion:
+	3	Distortion Guitar:
 	4	Dist.Fast :
 	5	Attack Dist
-	8	Feedback Gt.
-	9	Feedback Gt2
+	8	Feedback Guitar
+	9	Feedback Guitar 2
 	16	Power Guitar
-	17	Power Gt.2
+	17	Power Guitar 2
 	18	5th Dist.
-	24	Rock Rhythm
-	25	Rock Rhythm2
-	26	Dist Rtm GTR
+	24	Rock Rhythm Guitar
+	25	Rock Rhythm Guitar 2
+	26	Distortion Rhythm Guitar
 31
-	0	Gt.Harmonics
-	8	Gt. Feedback
-	9	Gt.Feedback2
-	16	Ac.Gt.Harmnx
-	24	E.Bass Harm.
+	0	Guitar Harmonics
+	8	Guitar Feedback
+	9	Guitar Feedback 2
+	16	Acoustic Guitar Harmonics
+	24	Electric Bass Harmonics
 
 32
-	0	Acoustic Bs.
-	1	Rockabilly
-	8	Wild A.Bass
-	9	Atk A.Bass
+	0	Acoustic Bass
+	1	Rockabilly Bass
+	8	Wild Acoustic Bass
+	9	Atk Acoustic Bass
 	16	Bass + OHH
 33
-	0	Fingered Bs.
-	1	Fingered Bs2
+	0	Fingered Bass
+	1	Fingered Bass 2
 	2	Jazz Bass
 	3	Jazz Bass 2
 	4	Rock Bass
 	5	Heart Bass
-	6	AttackFinger
+	6	Attack Finger
 	7	Finger Slap
-	8	ChorusJazzBs
-	16	F.Bass/Harm.
+	8	Chorus Jazz Bass
+	16	Fingered Bass/Harmonics
 34
 	0	Picked Bass
-	1	Picked Bass2
-	2	Picked Bass3
-	3	Picked Bass4
+	1	Picked Bass 2
+	2	Picked Bass 3
+	3	Picked Bass 4
 	4	Double Pick
-	8	Muted PickBs
-	16	P.Bass/Harm.
+	8	Muted Pick Bass
+	16	Picked Bass/Harmonics
 35
-	0	Fretless Bs.
-	1	Fretless Bs2
-	2	Fretless Bs3
-	3	Fretless Bs4
+	0	Fretless Bass
+	1	Fretless Bass 2
+	2	Fretless Bass 3
+	3	Fretless Bass 4
 	4	Syn Fretless
 	5	Mr.Smooth
 	8	Wood+FlessBs
 36
 	0	Slap Bass 1
 	1	Slap Pop
-	8	Reso Slap
+	8	Reso Slap Bass
 	9	Unison Slap
 37
 	0	Slap Bass 2
 	1	Slap Bass 3
-	8	FM Slap
+	8	FM Slap Bass
 38
 	0	Synth Bass 1
-	1	SynthBass101
+	1	Synth Bass 101
 	2	CS Bass
 	3	JP-4 Bass
 	4	JP-8 Bass
@@ -322,46 +322,46 @@
 	10	Tekno Bass
 	11	TB303 Bass 2
 	12	Kicked TB303
-	13	TB303 Saw Bs
-	14	Rubber303 Bs
-	15	Reso 303 Bs
+	13	TB303 Saw Bass
+	14	Rubber303 Bass
+	15	Reso 303 Bass
 	16	Reso SH Bass
-	17	TB303 Sqr Bs
-	18	TB303 DistBs
+	17	TB303 Sqr Bass
+	18	TB303 Dist Bass
 	19	Clavi Bass
 	20	Hammer
 	21	Jungle Bass
 	22	Square Bass
-	23	Square Bass2
-	24	Arpeggio Bs
+	23	Square Bass 2
+	24	Arpeggio Bass
 	32	Hit&Saw Bass
 	33	Ring Bass
-	34	AtkSineBass
+	34	Atk Sine Bass
 	35	OB sine Bass
-	36	Auxiliary Bs
-	40	303SqDistBs
-	41	303SqDistBs2
-	42	303SqDistBs3
+	36	Auxiliary Bass
+	40	303SqDist Bass
+	41	303SqDist Bass 2
+	42	303SqDist Bass 3
 	43	303Sqr.Rev
 	44	TeeBee
 39
 	0	Synth Bass 2
-	1	SynthBass201
+	1	Synth Bass 201
 	2	Modular Bass
 	3	Seq Bass
 	4	MG Bass
-	5	Mg Oct Bass1
-	6	MG Oct Bass2
-	7	MG Blip Bs:
+	5	Mg Oct Bass 1
+	6	MG Oct Bass 2
+	7	MG Blip Bass:
 	8	Beef FM Bass
 	9	Dly Bass
 	10	X Wire Bass
 	11	WireStr Bass
-	12	Blip Bass :
-	13	RubberBass 1
-	14	Syn Bell Bs
+	12	Blip Bass:
+	13	Rubber Bass 1
+	14	Syn Bell Bass
 	15	Odd Bass
-	16	RubberBass 2
+	16	Rubber Bass 2
 	17	SH101 Bass 1
 	18	SH101 Bass 2
 	19	Smooth Bass
@@ -376,176 +376,176 @@
 	28	Bubble Bass
 	29	Attack Pulse
 	30	Sync Bass 2
-	31	Pulse Mix Bs
+	31	Pulse Mix Bass
 	32	MG Dist Bass
 	33	Seq Bass 2
 	34	3rd Bass
 	35	MG Oct Bass
-	36	SlowEnvBass
+	36	SlowEnv Bass
 	37	Mild Bass
-	38	DistEnvBass
-	39	MG LightBass
-	40	DistSynBass
+	38	DistEnv Bass
+	39	MG Light Bass
+	40	DistSyn Bass
 	41	Rise Bass
 	42	Cyber Bass
 
 40
 	0	Violin:
-	1	Violin Atk:
+	1	Violin Attack:
 	8	Slow Violin
 41
 	0	Viola:
-	1	Viola Atk.:
+	1	Viola Attack:
 42
 	0	Cello:
-	1	Cello Atk.:
+	1	Cello Attack:
 43
 	0	Contrabass
 44
-	0	Tremolo Str
-	2	Trem Str.St.
-	8	Slow Tremolo
-	9	Suspense Str
-	10	SuspenseStr2
+	0	Tremolo Strings
+	2	Tremolo Strings St.
+	8	Slow Tremolo Strings
+	9	Suspense Strings
+	10	Suspense Strings 2
 45
-	0	PizzicatoStr
-	1	Vcs&Cbs Pizz
-	2	Chamber Pizz
-	3	St.Pizzicato
-	8	Solo Pizz.
+	0	Pizzicato Strings
+	1	Vcs&Cbs Pizzicato Strings
+	2	Chamber Pizzicato Strings
+	3	St. Pizzicato Strings
+	8	Solo Pizzicato
 	16	Solo Spic.
-	17	StringsSpic.
+	17	Strings Spic.
 46
 	0	Harp
-	1	Harp&Strings
+	1	Harp + Strings
 	2	Harp St.
 	8	Uillean Harp
 	16	Synth Harp
 	24	Yang Qin
 	25	Yang Qin 2
-	26	SynthYangQin
+	26	Synth Yang Qin
 47
 	0	Timpani
 
 48
 	0	Strings
-	1	Bright Str:
-	2	ChamberStr
-	3	Cello sect.
-	4	Bright Str.2
-	5	Bright Str.3
+	1	Bright Strings:
+	2	Chamber Strings
+	3	Cello section
+	4	Bright Strings 2
+	5	Bright Strings 3
 	6	Quad Strings
 	7	Mild Strings
 	8	Orchestra
 	9	Orchestra 2
-	10	Tremolo Orch
-	11	Choir Str.
-	12	Strings+Horn
-	13	Str.+Flute
-	14	Choir Str.2
-	15	Choir Str.3
+	10	Tremolo Orchestra
+	11	Choir Strings
+	12	Strings + Horn
+	13	Strings  +Flute
+	14	Choir Strings 2
+	15	Choir Strings 3
 	16	St. Strings
-	17	St.Strings 2
-	18	St.Strings 3
+	17	St. Strings 2
+	18	St. Strings 3
 	19	Orchestra 3
 	20	Orchestra 4
 	24	Velo Strings
-	32	Oct Strings1
-	33	Oct Strings2
-	34	ContraBsSect
+	32	Oct Strings 1
+	33	Oct Strings 2
+	34	Contrabass Section
 	40	60s Strings
 49
 	0	Slow Strings
-	1	SlowStrings2
-	2	SlowStrings3
-	8	Legato Str.
+	1	Slow Strings 2
+	2	Slow Strings 3
+	8	Legato Strings
 	9	Warm Strings
-	10	St.Slow Str.
-	11	St.Slow Str2
-	12	S.Str+Choir
-	13	S.Str+Choir2
+	10	St. Slow Strings
+	11	St. Slow Strings 2
+	12	S. Strings + Choir
+	13	S. Strings +C hoir 2
 50
-	0	Syn.Strings1
+	0	Syn. Strings 1
 	1	OB Strings
-	2	StackStrings
+	2	Stack Strings
 	3	JP Strings
-	4	Chorus Str.
-	8	Syn.Strings3
-	9	Syn.Strings4
-	10	Syn.Strings6
-	11	Syn.Strings7
+	4	Chorus Strings
+	8	Syn. Strings 3
+	9	Syn. Strings 4
+	10	Syn. Strings 6
+	11	Syn. Strings 7
 	12	LoFi Strings
 	16	High Strings
-	17	Hybrid Str.
+	17	Hybrid Strings
 	24	Tron Strings
 	25	Noiz Strings
 51
-	0	Syn.Strings2
-	1	Syn.Strings5
+	0	Syn. Strings 2
+	1	Syn. Strings 5
 	2	JUNO Strings
-	3	FilteredOrch
-	4	JP Saw Str.
-	5	Hybrid Str.2
-	6	DistStrings
-	7	JUNOFullStr.
+	3	Filtered Orch
+	4	JP Saw Strings
+	5	Hybrid Strings 2
+	6	Dist Strings
+	7	JUNO Full Strings
 	8	Air Strings
-	9	Atk Syn Str.
-	10	StraightStr.
+	9	Atk Syn Strings
+	10	Straight Strings
 52
 	0	Choir Aahs
-	8	St.ChoirAahs
+	8	St. Choir Aahs
 	9	Melted Choir
 	10	Church Choir
 	11	Boys Choir 1
 	12	Boys Choir 2
-	13	St.BoysChoir
+	13	St. Boys Choir
 	14	Rich Choir
 	16	Choir Hahs
 	24	Chorus Lahs
 	32	Chorus Aahs 2
-	33	Male Aah+Str
+	33	Male Aah + Strings
 53
 	0	Voice Oohs
 	1	Chorus Oohs
 	2	Voice Oohs 2
-	3	Chorus Oohs2
-	4	OohsCodeMaj7
-	5	OohsCodeSus4
+	3	Chorus Oohs 2
+	4	Oohs Code Maj7
+	5	Oohs Code Sus4
 	6	Jazz Scat
 	8	Voice Dahs
-	9	JzVoice Dat
-	10	JzVoice Bap
-	11	JzVoice Dow
-	12	JzVoice Thum
-	16	VoiceLah Fem
-	17	ChorusLahFem
-	18	VoiceLuh Fem
-	19	ChorusLuhFem
-	20	VoiceLan Fem
-	21	ChorusLanFem
-	22	VoiceAah Fem
-	23	VoiceUuh Fem
-	24	Fem Lah&Lan
-	32	VoiceWah Mal
-	33	ChorusWahMal
-	34	VoiceWoh Mal
-	35	ChorusWohMal
-	36	VoiceAah Mal
-	37	VoiceOoh Mal
+	9	Jz Voice Dat
+	10	Jz Voice Bap
+	11	Jz Voice Dow
+	12	Jz Voice Thum
+	16	Voice Lah Female
+	17	Chorus Lah Female
+	18	Voice Luh Female
+	19	Chorus Luh Female
+	20	Voice Lan Female
+	21	Chorus Lan Female
+	22	Voice Aah Female
+	23	Voice Uuh Female
+	24	Fem Lah & Lan
+	32	Voice Wah Male
+	33	Chorus Wah Male
+	34	Voice Woh Male
+	35	Chorus Woh Male
+	36	Voice Aah Male
+	37	Voice Ooh Male
 	40	Humming
 54
-	0	SynVox
-	1	SynVox 2
-	2	SynVox 3
-	8	Syn.Voice
+	0	Syn Vox
+	1	Syn Vox 2
+	2	Syn Vox 3
+	8	Syn. Voice
 	9	Silent Night
-	10	Syn.Voice 2
+	10	Syn. Voice 2
 	16	VP330 Choir
 	17	Vinyl Choir
 	18	JX8P Vox
 	19	Analog Voice
 55
-	0	OrchestraHit
+	0	Orchestra Hit
 	1	Bass Hit
 	2	6th Hit
 	3	Euro Hit

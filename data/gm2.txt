@@ -1,0 +1,398 @@
+0
+	0	Acoustic Grand Piano
+	1	Acoustic Grand Piano (wide)
+	2	Acoustic Grand Piano (dark)
+1
+	0	Bright Acoustic Piano
+	1	Bright Acoustic Piano (wide)
+2
+	0	Electric Grand Piano
+	1	Electric Grand Piano (wide)
+3
+	0	Honky-tonk Piano 21-108 
+	1	Honky-tonk Piano (wide)
+4
+	0	Electric Piano 1
+	1	Detuned Electric Piano 1
+	2	Electric Piano 1 (velocity mix)
+	3	60's Electric Piano
+5
+	0	Electric Piano 2
+	1	Detuned Electric Piano
+	2	Electric Piano 2 (velocity mix)
+	3	EP Legend
+	4	EP Phase
+6
+	0	Harpsichord
+	1	Harpsichord (octave mix)
+	2	Harpsichord (wide)
+	3	Harpsichord (with key off)
+7
+	0	Clavi
+	1	Pulse Clavi
+
+8
+	0	Celesta
+9
+	0	Glockenspiel
+10
+	0	Music Box
+11
+	0	Vibraphone
+	1	Vibraphone (wide)
+12
+	0	Marimba
+	1	Marimba (wide)
+13
+	0	Xylophone
+14
+	0	Tubular Bells
+	1	Church Bell
+	2	Carillon
+15
+	0	Dulcimer
+
+16
+	0	Drawbar Organ
+	1	Detuned Drawbar Organ
+	2	Italian 60's Organ
+	3	Drawbar Organ 2
+17
+	0	Percussive Organ
+	1	Detuned Percussive Organ
+	2	Percussive Organ 2
+18
+	0	Rock Organ
+19
+	0	Church Organ
+	1	Church Organ (octave mix)
+	2	Detuned Church Organ
+20
+	0	Reed Organ
+	1	Puff Organ
+21
+	0	Accordion
+	1	Accordion 2
+22
+	0	Harmonica
+23
+	0	Tango Accordion
+
+24
+	0	Acoustic Guitar (nylon)
+	1	Ukulele
+	2	Acoustic Guitar (nylon + key off)
+	3	Acoustic Guitar (nylon 2)
+25
+	0	Acoustic Guitar (steel)
+	1	12-Strings Guitar
+	2	Mandolin
+	3	Steel Guitar with Body Sound
+26
+	0	Electric Guitar (jazz)
+	1	Electric Guitar (pedal steel)
+27
+	0	Electric Guitar (clean)
+	1	Electric Guitar (detuned clean)
+	2	Mid Tone Guitar
+28
+	0	Electric Guitar (muted)
+	1	Electric Guitar (funky cutting)
+	2	Electric Guitar (muted velo-sw)
+	3	Jazz Man
+29
+	0	Overdriven Guitar
+	1	Guitar Pinch
+30
+	0	Distortion Guitar
+	1	Distortion Guitar (with feedback)
+	2	Distorted Rhythm Guitar
+31
+	0	Guitar Harmonics
+	1	Guitar Feedback
+
+32
+	0	Acoustic Bass
+33
+	0	Electric Bass (finger)
+	1	Finger Slap Bass
+34
+	0	Electric Bass (pick)
+35
+	0	Fretless Bass
+36
+	0	Slap Bass 1
+37
+	0	Slap Bass 2
+38
+	0	Synth Bass 1
+	1	Synth Bass (warm)
+	2	Synth Bass 3 (resonance)
+	3	Clavi Bass
+	4	Hammer
+39
+	0	Synth Bass 2
+	1	Synth Bass 4 (attack)
+	2	Synth Bass (rubber)
+	3	Attack Pulse
+
+40
+	0	Violin
+	1	Violin (slow attack)
+41
+	0	Viola
+42
+	0	Cello
+43
+	0	Contrabass
+44
+	0	Tremolo Strings
+45
+	0	Pizzicato Strings
+46
+	0	Orchestral Harp
+	1	Yang Chin
+47
+	0	Timpani
+48
+	0	String Ensembles
+	1	Strings and Brass
+	2	60s Strings
+49
+	0	String Ensembles
+50
+	0	Synth Strings 1
+	1	Synth Strings 3
+51
+	0	Synth Strings 2
+52
+	0	Choir Aahs
+	1	Choir Aahs
+53
+	0	Voice Oohs
+	1	Humming
+54
+	0	Synth Voice
+	1	Analog Voice
+55
+	0	Orchestra Hit
+	1	Bass Hit Plus
+	2	6th Hit
+	3	Euro Hit
+
+56
+	0	Trumpet
+	1	Dark Trumpet Soft
+57
+	0	Trombone
+	1	Trombone 2
+	2	Bright Trombone
+58
+	0	Tuba
+59
+	0	Muted Trumpet
+	1	Muted Trumpet 2
+60
+	0	French Horn
+	1	French Horn 2 (warm)
+61
+	0	Brass Section
+	1	Brass Section 2 (octave mix)
+62
+	0	Synth Brass 1
+	1	Synth Brass 3
+	2	Analog Synth Brass 1
+	3	Jump Brass
+63
+	0	Synth Brass 2
+	1	Synth Brass 4
+	2	Analog Synth Brass 2
+
+64
+	0	Soprano Sax
+65
+	0	Alto Sax
+66
+	0	Tenor Sax
+67
+	0	Baritone Sax
+68
+	0	Oboe
+69
+	0	English Horn
+70
+	0	Bassoon
+71
+	0	Clarinet
+
+72
+	0	Piccolo
+73
+	0	Flute
+74
+	0	Recorder
+75
+	0	Pan Flute
+76
+	0	Blown Bottle
+77
+	0	Shakuhachi
+78
+	0	Whistle
+79
+	0	Ocarina
+
+80
+	0	Lead 1 (square)
+	1	Lead 1a (square 2)
+	2	Lead 1b (sine)
+81
+	0	Lead 2 (sawtooth)
+	1	Lead 2a (sawtooth 2)
+	2	Lead 2b (saw + pulse)
+	3	Lead 2c (double sawtooth)
+	4	Lead 2d (sequenced analog)
+82
+	0	Lead 3 (calliope)
+83
+	0	Lead 4 (chiff)
+84
+	0	Lead 5 (charang)
+	1	Lead 5a (wire lead)
+85
+	0	Lead 6 (voice)
+86
+	0	Lead 7 (fifths)
+87
+	0	Lead 8 (bass + lead)
+	1	Lead 8a (soft wrl)
+
+88
+	0	Pad 1 (new age)
+89
+	0	Pad 2 (warm)
+	1	Pad 2a (sine pad)
+90
+	0	Pad 3 (polysynth)
+91
+	0	Pad 4 (choir)
+	1	Pad 4a (itopia)
+92
+	0	Pad 5 (bowed)
+93
+	0	Pad 6 (metallic)
+94
+	0	Pad 7 (halo)
+95
+	0	Pad 8 (sweep)
+
+96
+	0	FX 1 (rain)
+97
+	0	FX 2 (soundtrack)
+98
+	0	FX 3 (crystal)
+	1	FX 3a (synth mallet)
+99
+	0	FX 4 (atmosphere)
+100
+	0	FX 5 (brightness)
+101
+	0	FX 6 (goblins)
+102
+	0	FX 7 (echoes)
+	1	FX 7a (echo bell)
+	2	FX 7b (echo pan)
+103
+	0	FX 8 (sci-fi)
+
+104
+	0	Sitar
+	1	Sitar 2 (bend)
+105
+	0	Banjo
+106
+	0	Shamisen
+107
+	0	Koto
+	1	Taisho Koto
+108
+	0	Kalimba
+109
+	0	Bag pipe
+110
+	0	Fiddle
+111
+	0	Shanai
+
+112
+	0	Tinkle Bell
+113
+	0	Agogo
+114
+	0	Steel Drums
+115
+	0	Woodblock
+	1	Castanets
+116
+	0	Taiko Drum
+	1	Concert Bass Drum
+117
+	0	Melodic Tom
+	1	Melodic Tom 2 (power)
+118
+	0	Synth Drum
+	1	Rhythm Box Tom
+	2	Electric Drum
+119
+	0	Reverse Cymbal
+
+120
+	0	Guitar Fret Noise
+	1	Guitar Cutting Noise
+	2	Acoustic Bass String Slap
+121
+	0	Breath Noise
+	1	Flute Key Click
+122
+	0	Seashore
+	1	Rain
+	2	Thunder
+	3	Wind
+	4	Stream
+	5	Bubble
+123
+	0	Bird Tweet
+	1	Dog
+	2	Horse Gallop
+	3	Bird Tweet 2
+124
+	0	Telephone Ring
+	1	Telephone Ring 2
+	2	Door Creaking
+	3	Door
+	4	Scratch
+	5	Wind Chime
+125
+	0	Helicopter
+	1	Car Engine
+	2	Car Stop
+	3	Car Pass
+	4	Car Crash
+	5	Siren
+	6	Train
+	7	Jetplane
+	8	Starship
+	9	Burst Noise
+126
+	0	Applause
+	1	Laughing
+	2	Screaming
+	3	Punch
+	4	Heart Beat
+	5	Footsteps
+127
+	0	Gunshot
+	1	Machine Gun
+	2	Lasergun
+	3	Explosion
