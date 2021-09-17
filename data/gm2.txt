@@ -28,8 +28,8 @@
 	2	Harpsichord (wide)
 	3	Harpsichord (with key off)
 7
-	0	Clavi
-	1	Pulse Clavi
+	0	Clavinet
+	1	Pulse Clavinet
 
 8
 	0	Celesta
