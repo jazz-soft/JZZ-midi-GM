@@ -2,9 +2,9 @@
 	0	Piano 1
 	1	Upright Piano
 	2	Mild Piano
-	8	Upright Piano w
-	9	Mild Piano w
-	16	European Pf
+	8	Upright Piano Wide
+	9	Mild Piano Wide
+	16	European Pianoforte
 	24	Piano + Strings
 	25	Piano + Strings 2
 	26	Piano + Choir 1
@@ -13,14 +13,14 @@
 	0	Piano 2
 	1	Pop Piano
 	2	Rock Piano
-	8	Pop Piano w
-	9	Rock Piano w
+	8	Pop Piano Wide
+	9	Rock Piano Wide
 	16	Dance Piano
 2
 	0	Piano 3
-	1	EG + Rhodes 1
-	2	EG + Rhodes 2
-	8	Piano 3 w
+	1	Electric Grand Piano + Rhodes 1
+	2	Electric Grand Piano + Rhodes 2
+	8	Piano 3 Wide
 3
 	0	Honky-tonk
 	8	Honky-tonk 2
@@ -30,7 +30,7 @@
 	9	Chorus Electric Piano
 	10	Silent Rhodes
 	16	FM + SA Electric Piano
-	17	Dist Electric Piano
+	17	Distortion Electric Piano
 	24	Wurly
 	25	Hard Rhodes
 	26	Mellow Rhodes
@@ -48,23 +48,23 @@
 	1	Harpsichord 2
 	2	Harpsichord 3
 	8	Coupled Harpsichord
-	16	Harpsichord w
+	16	Harpsichord Wide
 	24	Harpsichord o
 	32	Synth Harpsichord
 7
 	0	Clavinet
 	1	Clavinet 2
-	2	Atk Clavinet 1
-	3	Atk Clavinet 2
+	2	Attack Clavinet 1
+	3	Attack Clavinet 2
 	8	Comp Clavinet
-	16	Reso Clavinet
+	16	Resonant Clavinet
 	17	Phase Clavinet
 	24	Clavinet o
 	32	Analog Clavinet
 	33	JP8 Clavinet 1
 	35	JP8 Clavinet 2
 	36	Synth Ring Clavinet
-	37	Synth Dist Clavinet
+	37	Synth Distortion Clavinet
 	38	JP8000 Clavinet
 	39	Pulse Clavinet
 
@@ -80,23 +80,23 @@
 11
 	0	Vibraphone
 	1	Pop Vibraphone
-	8	Vibraphone w
+	8	Vibraphone Wide
 	9	Vibraphones
 12
 	0	Marimba
-	8	Marimba w
+	8	Marimba Wide
 	16	Barafon
 	17	Barafon 2
 	24	Log drum
 13
 	0	Xylophone
-	8	Xylophone w
+	8	Xylophone Wide
 14
 	0	Tubular Bells
 	8	Church Bell
 	9	Carillon
 	10	Church Bell 2
-	16	Tubular Bell w
+	16	Tubular Bell Wide
 15
 	0	Santur
 	1	Santur 2
@@ -109,17 +109,17 @@
 16
 	0	Organ 1
 	1	Organ 101
-	2	Ful Organ 1
-	3	Ful Organ 2
-	4	Ful Organ 3
-	5	Ful Organ 4
-	6	Ful Organ 5
-	7	Ful Organ 6
+	2	Full Organ 1
+	3	Full Organ 2
+	4	Full Organ 3
+	5	Full Organ 4
+	6	Full Organ 5
+	7	Full Organ 6
 	8	Tremolo Organ
 	9	Organ o
-	10	Ful Organ 7
-	11	Ful Organ 8
-	12	Ful Organ 9
+	10	Full Organ 7
+	11	Full Organ 8
+	12	Full Organ 9
 	16	60's Organ 1
 	17	60's Organ 2
 	18	60's Organ 3
@@ -170,8 +170,8 @@
 	8	Wind Organ
 	16	Puff Organ
 21
-	0	Accordion Fr
-	8	Accordion It
+	0	Accordion French
+	8	Accordion Italian
 	9	Distortion Accordion
 	16	Chorus Accordion
 	24	Hard Accordion
@@ -190,14 +190,14 @@
 	0	Nylon String Guitar
 	8	Ukulele
 	16	Nylon String Guitar o
-	24	Velo Harmnix
+	24	Velo Harmonics
 	32	Nylon String Guitar 2
 	40	Lequint Guitar
 25
 	0	Steel String Guitar
 	8	12-String Guitar
 	9	Nylon + Steel String Guitar
-	10	Atk Steel String Guitar
+	10	Attack Steel String Guitar
 	16	Mandolin
 	17	Mandolin 2
 	18	Mandolin Tremolo
@@ -213,7 +213,7 @@
 	2	Open Hard 1
 	3	Open Hard 2
 	4	JC Clean Guitar
-	5	Atk Clean Guitar
+	5	Attack Clean Guitar
 	8	Chorus Guitar
 	9	JC Chorus Guitar
 	16	TC Front Pick
@@ -242,8 +242,8 @@
 	5	Attack Drive
 	8	LP Overdrive Guitar
 	9	LP Overdrive Guitar:
-	10	LP Half Drv
-	11	LP Half Drv 2
+	10	LP Half Drive
+	11	LP Half Drive 2
 	12	LP Chorus
 30
 	0	Distortion Guitar
@@ -256,7 +256,7 @@
 	9	Feedback Guitar 2
 	16	Power Guitar
 	17	Power Guitar 2
-	18	5th Dist.
+	18	5th Distortion
 	24	Rock Rhythm Guitar
 	25	Rock Rhythm Guitar 2
 	26	Distortion Rhythm Guitar
@@ -271,7 +271,7 @@
 	0	Acoustic Bass
 	1	Rockabilly Bass
 	8	Wild Acoustic Bass
-	9	Atk Acoustic Bass
+	9	Attack Acoustic Bass
 	16	Bass + OHH
 33
 	0	Fingered Bass
@@ -303,7 +303,7 @@
 36
 	0	Slap Bass 1
 	1	Slap Pop
-	8	Reso Slap Bass
+	8	Resonant Slap Bass
 	9	Unison Slap
 37
 	0	Slap Bass 2
@@ -324,10 +324,10 @@
 	12	Kicked TB303
 	13	TB303 Saw Bass
 	14	Rubber303 Bass
-	15	Reso 303 Bass
-	16	Reso SH Bass
-	17	TB303 Sqr Bass
-	18	TB303 Dist Bass
+	15	Resonant 303 Bass
+	16	Resonant SH Bass
+	17	TB303 Square Bass
+	18	TB303 Distortion Bass
 	19	Clavi Bass
 	20	Hammer
 	21	Jungle Bass
@@ -336,13 +336,13 @@
 	24	Arpeggio Bass
 	32	Hit & Saw Bass
 	33	Ring Bass
-	34	Atk Sine Bass
+	34	Attack Sine Bass
 	35	OB sine Bass
 	36	Auxiliary Bass
-	40	303 Sq Dist Bass
-	41	303 Sq Dist Bass 2
-	42	303 Sq Dist Bass 3
-	43	303 Sqr. Rev
+	40	303 Square Distortion Bass
+	41	303 Square Distortion Bass 2
+	42	303 Square Distortion Bass 3
+	43	303 Square Rev
 	44	TeeBee
 39
 	0	Synth Bass 2
@@ -350,16 +350,16 @@
 	2	Modular Bass
 	3	Seq Bass
 	4	MG Bass
-	5	Mg Oct Bass 1
-	6	MG Oct Bass 2
+	5	Mg Octave Bass 1
+	6	MG Octave Bass 2
 	7	MG Blip Bass:
 	8	Beef FM Bass
-	9	Dly Bass
+	9	Delay Bass
 	10	X Wire Bass
 	11	WireStr Bass
 	12	Blip Bass:
 	13	Rubber Bass 1
-	14	Syn Bell Bass
+	14	Synth Bell Bass
 	15	Odd Bass
 	16	Rubber Bass 2
 	17	SH101 Bass 1
@@ -377,15 +377,15 @@
 	29	Attack Pulse
 	30	Sync Bass 2
 	31	Pulse Mix Bass
-	32	MG Dist Bass
+	32	MG Distortion Bass
 	33	Seq Bass 2
 	34	3rd Bass
-	35	MG Oct Bass
+	35	MG Octave Bass
 	36	Slow Env Bass
 	37	Mild Bass
-	38	Dist Env Bass
+	38	Distortion Env Bass
 	39	MG Light Bass
-	40	Dist Syn Bass
+	40	Distortion Synth Bass
 	41	Rise Bass
 	42	Cyber Bass
 
@@ -409,12 +409,12 @@
 	10	Suspense Strings 2
 45
 	0	Pizzicato Strings
-	1	Vcs&Cbs Pizzicato Strings
+	1	Vcs & Contrabass Pizzicato Strings
 	2	Chamber Pizzicato Strings
 	3	Synth Pizzicato Strings
 	8	Solo Pizzicato
-	16	Solo Spic.
-	17	Strings Spic.
+	16	Solo Spiccato
+	17	Strings Spiccato
 46
 	0	Harp
 	1	Harp + Strings
@@ -450,8 +450,8 @@
 	19	Orchestra 3
 	20	Orchestra 4
 	24	Velo Strings
-	32	Oct Strings 1
-	33	Oct Strings 2
+	32	Octave Strings 1
+	33	Octave Strings 2
 	34	Contrabass Section
 	40	60s Strings
 49
@@ -486,10 +486,10 @@
 	3	Filtered Orch
 	4	JP Saw Strings
 	5	Hybrid Strings 2
-	6	Dist Strings
+	6	Distortion Strings
 	7	JUNO Full Strings
 	8	Air Strings
-	9	Atk Synth Strings
+	9	Attack Synth Strings
 	10	Straight Strings
 52
 	0	Choir Aahs
@@ -552,14 +552,14 @@
 	8	Impact Hit
 	9	Philly Hit
 	10	Double Hit
-	11	Perc. Hit
+	11	Percussion Hit
 	12	Shock Wave
 	13	Bounce Hit
 	14	Drill Hit
 	15	Thrill Hit
 	16	Lo Fi Rave
 	17	Techno Hit
-	18	Dist. Hit
+	18	Distortion Hit
 	19	Bam Hit
 	20	Bit Hit
 	21	Bim Hit
@@ -575,7 +575,7 @@
 	1	Trumpet 2
 	2	Trumpet:
 	3	Dark Trumpet
-	4	Trumpet & Nz
+	4	Trumpet & Noise
 	8	Flugel Horn
 	16	4th Trumpets
 	24	Bright Trumpet
@@ -589,7 +589,7 @@
 	2	Twin Trombones
 	3	Trombones & Tuba
 	4	Bright Trombone
-	8	Bs. Trombone
+	8	Bass Trombone
 	16	Euphonium
 58
 	0	Tuba
@@ -603,8 +603,8 @@
 	8	Muted Horns
 60
 	0	French Horns
-	1	Fr.Horn 2
-	2	Horn + Orche
+	1	French Horn 2
+	2	Horn + Orchestra
 	3	Wide French Horns
 	8	French Horn Slow:
 	9	Dual Horns
@@ -613,7 +613,7 @@
 61
 	0	Brass 1
 	1	Brass ff
-	2	Bones Sect.
+	2	Bones Section
 	3	Synth Brass ff
 	4	Quad Brass1
 	5	Quad Brass2
@@ -642,10 +642,10 @@
 	5	Jump Brass
 	8	Pro Brass
 	9	P5 Brass
-	10	Orch Syn Brass
-	16	Oct Syn Brass
+	10	Orch Synth Brass
+	16	Octave Synth Brass
 	17	Hybrid Brass
-	18	Oct Syn Brass 2
+	18	Octave Synth Brass 2
 	19	BPF Brass
 63
 	0	Synth Brass 2
@@ -653,12 +653,12 @@
 	2	Warm Brass
 	3	Synth Brass 3
 	4	Sync Brass
-	5	Fat Syn Brass
-	6	Deep Syn Brass
-	8	Syn Brass sfz
+	5	Fat Synth Brass
+	6	Deep Synth Brass
+	8	Synth Brass sfz
 	9	OB Brass
-	10	Reso Brass
-	11	Dist Sqr Brass
+	10	Resonant Brass
+	11	Distortion Square Brass
 	12	JP8000 Saw Brass
 	16	Velo Brass 1
 	17	Transbrass
@@ -706,7 +706,7 @@
 	1	Flute 2:
 	2	Flute Exp.
 	3	Flute Travelso
-	8	Flute + Vln
+	8	Flute + Violin
 	9	Pipe & Reed
 	16	Tron Flute
 	17	Indian Flute
@@ -716,7 +716,7 @@
 	0	Pan Flute
 	8	Kawala
 	16	Zampona
-	17	Zampona Atk
+	17	Zampona Attack
 	24	Tin Whistle
 	25	Tin Whtstle Nm
 	26	Tin Whtstle Or
@@ -747,22 +747,22 @@
 	16	P5 Square
 	17	OB Square
 	18	JP-8 Square
-	19	Dist Square
-	20	303 SquarDst1
-	21	303 SquarDst2
-	22	303 Mix Sqr
-	23	Dual Sqr&Saw
+	19	Distortion Square
+	20	303 Square Distortion 1
+	21	303 Square Distortion 2
+	22	303 Mix Square
+	23	Dual Square & Saw
 	24	Pulse Lead
 	25	JP8 Pulse Lead 1
 	26	JP8 Pulse Lead 2
-	27	MG Reso. Pls
+	27	MG Resonant Pulse
 	28	JP8 Pulse Lead 3
 	29	260 Ring Lead
-	30	303 Dist Lead
-	31	JP8000 Dist Lead
+	30	303 Distortion Lead
+	31	JP8000 Distortion Lead
 	32	HipHop Sin Lead
-	33	HipHop Sqr Lead
-	34	HipHop Pls Lead
+	33	HipHop Square Lead
+	34	HipHop Pulse Lead
 	35	Flux Pulse
 81
 	0	Saw Wave
@@ -795,18 +795,18 @@
 	32	OB Saw Lead
 	33	P5 Saw Lead
 	34	MG unison
-	35	Oct Saw Lead
+	35	Octave Saw Lead
 	36	Natural Lead
 	40	Sequence Saw 1
 	41	Sequence Saw 2
-	42	Reso Saw
+	42	Resonant Saw
 	43	Cheese Saw 1
 	44	Cheese Saw 2
 	45	Rhythmic Saw
 	46	Sequenced Saw
 	47	Techno Saw
 82
-	0	Syn. Calliope
+	0	Synth Calliope
 	1	Vent Synth
 	2	Pure Pan Lead
 	8	LM Pure Lead
@@ -815,14 +815,14 @@
 	0	Chiffer Lead
 	1	TB Lead
 	2	Hybrid Lead
-	3	Unison SqrLd
+	3	Unison Square Lead
 	4	Fat Solo Lead
 	5	Forceful Lead
-	6	Oct. Unison Lead
+	6	Octave Unison Lead
 	7	Unison Saw Lead
 	8	Mad Lead
 	9	Crowding Lead
-	10	Double Sqr.
+	10	Double Square
 84
 	0	Charang
 	1	Wire Lead
@@ -831,11 +831,11 @@
 	4	Windy GR Lead
 	5	Mellow GR Lead
 	6	GR & Pulse
-	8	Dist. Lead
+	8	Distortion Lead
 	9	Acid Guitar 1
 	10	Acid Guitar 2
-	11	Dance Dst. Guitar
-	12	Dance Dst. Guitar 2
+	11	Dance Distortion Guitar
+	12	Dance Distortion Guitar 2
 	16	P5 Sync Lead
 	17	Fat SyncLead
 	18	Rock Lead
@@ -892,7 +892,7 @@
 	9	Stack Pad
 	10	Human Pad
 	11	Sync Brs. Pad
-	12	Oct. PWM Pad
+	12	Octave PWM Pad
 	13	JP Soft Pad
 90
 	0	Polysynth
@@ -902,11 +902,11 @@
 	4	Super Polysynth
 	8	Power Stack
 	9	Octave Stack
-	10	Reso Stack
+	10	Resonant Stack
 	11	Techno Stack
 	12	Pulse Stack
-	13	Twin Oct. Rave
-	14	Oct. Rave
+	13	Twin Octave Rave
+	14	Octave Rave
 	15	Happy Synth
 	16	Forward Sweep
 	17	Reverse Sweep
@@ -927,7 +927,7 @@
 92
 	0	Bowed Glass
 	1	Soft Bell Pad
-	2	JP8 Sqr Pad
+	2	JP8 Square Pad
 	3	7th Bell Pad
 	4	Steel Glass
 	5	Bottle Stack
@@ -985,7 +985,7 @@
 	8	Rave
 98
 	0	Crystal
-	1	Syn Mallet
+	1	Synth Mallet
 	2	Soft Crystal
 	3	Round Glock
 	4	Loud Glock
@@ -1049,7 +1049,7 @@
 	16	Sweep FX
 	17	LM Has Come
 	18	Fallin Insect
-	19	LFO Oct.Rave
+	19	LFO OctaveRave
 	20	Just Before
 	21	RND Fl. Chord
 	22	Random Ending
@@ -1069,7 +1069,7 @@
 	2	Echo Pan
 	3	Echo Pan 2
 	4	Big Panner
-	5	Reso Panner
+	5	Resonant Panner
 	6	Water Piano
 	7	Echo SynBass
 	8	Pan Sequence
@@ -1114,14 +1114,14 @@
 106
 	0	Shamisen
 	1	Tsugaru
-	8	Syn Shamisen
+	8	Synth Shamisen
 107
 	0	Koto
 	1	Gu Zheng
 	8	Taisho Koto
 	16	Kanoon
 	19	Kanoon + Choir
-	24	Oct Harp
+	24	Octave Harp
 108
 	0	Kalimba
 	8	Sanza
@@ -1131,8 +1131,8 @@
 	0	Bagpipe
 	8	Didgeridoo
 	9	Uillean Pipe
-	10	UillnPipe Nm
-	11	UillnPipe Or
+	10	Uillean Pipe Nm
+	11	Uillean Pipe Or
 110
 	0	Fiddle
 	8	Er Hu
@@ -1166,7 +1166,7 @@
 	23	Ceng Ceng
 	24	Reyoung
 	25	Kempur
-	32	Jngl Crash
+	32	Jungle Crash
 	40	Crash Menu
 	41	Ride Cymbal Menu
 	42	Ride Bell Menu
@@ -1181,54 +1181,54 @@
 	0	Woodblock
 	8	Castanets
 	16	Angklung
-	17	Angkl Rhythm
+	17	Angklung Rhythm
 	24	Finger Snaps
 	32	909 Hand Clap
 	40	Hand Clap Menu
 116
 	0	Taiko
 	1	Small Taiko
-	8	Concert BD
-	9	ConcertBD Mt
-	16	Jungle BD
-	17	Techno BD
+	8	Concert Bass Drum
+	9	Concert Bass Drum Mt
+	16	Jungle Bass Drum
+	17	Techno Bass Drum
 	18	Bounce
 	24	Kendang Wadon
 	25	Bebarongan
 	26	Pelegongan
 	27	Dholak 1
 	28	Dholak 2
-	32	Jngl BD Roll
+	32	Jungle Bass Drum Roll
 	40	Kick Menu 1
 	41	Kick Menu 2
 	42	Kick Menu 3
 	43	Kick Menu 4
 117
-	0	Melo. Tom 1
+	0	Melodic Tom 1
 	1	Real Tom
 	2	Real Tom 2
 	3	Jazz Tom
 	4	Brush Tom
-	8	Melo. Tom 2
+	8	Melodic Tom 2
 	9	Rock Tom
-	16	Rash SD
-	17	House SD
-	18	Jungle SD
-	19	909 SD
-	24	Jngl SD Roll
-	40	SD Menu 1
-	41	SD Menu 2
-	42	SD Menu 3
-	43	SD Menu 4
-	44	SD Menu 5
+	16	Rash Snare Drum
+	17	House Snare Drum
+	18	Jungle Snare Drum
+	19	909 Snare Drum
+	24	Jungle Snare Drum Roll
+	40	Snare Drum Menu 1
+	41	Snare Drum Menu 2
+	42	Snare Drum Menu 3
+	43	Snare Drum Menu 4
+	44	Snare Drum Menu 5
 118
 	0	Synth Drum
 	8	808 Tom
 	9	Elec Perc
-	10	Sine Perc.
+	10	Sine Percussion
 	11	606 Tom
 	12	909 Tom
-	13	606 Dist. Tom
+	13	606 Distortion Tom
 119
 	0	Reverse Cymbal
 	1	Reverse Cymbal 2
@@ -1237,17 +1237,17 @@
 	8	Reverse Snare 1
 	9	Reverse Snare 2
 	16	Reverse Kick 1
-	17	Reverse Con BD
+	17	Reverse Con Bass Drum
 	24	Reverse Tom 1
 	25	Reverse Tom 2
 	26	Reverse Tom 3
 	27	Reverse Tom 4
-	40	Reverse SD Menu1
-	41	Reverse SD Menu2
-	42	Reverse SD Menu3
-	43	Reverse BD Menu1
-	44	Reverse BD Menu2
-	45	Reverse BD Menu3
+	40	Reverse Snare Drum Menu1
+	41	Reverse Snare Drum Menu2
+	42	Reverse Snare Drum Menu3
+	43	Reverse Bass Drum Menu1
+	44	Reverse Bass Drum Menu2
+	45	Reverse Bass Drum Menu3
 	46	Reverse Clap Menu
 
 120
@@ -1255,7 +1255,7 @@
 	1	Guitar Cut Noise
 	2	String Slap
 	3	Guitar Cut Noise 2
-	4	Distorted Cut Noise
+	4	Distortion Cut Noise
 	5	Bass Slide
 	6	Pick Scrape
 	8	Guitar FX Menu
@@ -1265,7 +1265,7 @@
 	12	Biwa Stroke
 	13	Biwa Tremolo
 	16	Acoustic Bass Noise Menu
-	17	Distorted Guitar Noise Menu
+	17	Distortion Guitar Noise Menu
 	18	Electric Guitar Noise Menu 1
 	19	Electric Guitar Noise Menu 2
 	20	Guitar Stroke Menu
@@ -1277,10 +1277,10 @@
 	26	TC Down Mt. Noise
 	27	TC Up Mt. Noise
 	28	TC Down Noise
-	29	Distorted Guitar Up Noise
-	30	Distorted Guitar Down Noise 1
-	31	Distorted Guitar Down Noise 2
-	32	Distorted Guitar Mute Noise
+	29	Distortion Guitar Up Noise
+	30	Distortion Guitar Down Noise 1
+	31	Distortion Guitar Down Noise 2
+	32	Distortion Guitar Mute Noise
 	34	Guitar Stroke Noise 5
 	35	Steel Guitar Slide Noise 1
 	36	Steel Guitar Slide Noise 2
@@ -1293,7 +1293,7 @@
 121
 	0	Breath Noise
 	1	Flute Key Click
-	2	Brth Nz Menu
+	2	Breath Noise Menu
 	3	Flute Breath 1
 	4	Flute Breath 2
 	5	Flute Breath 3
@@ -1351,7 +1351,7 @@
 	8	Starship
 	9	Burst Noise
 	10	Calculating
-	11	Perc. Bang
+	11	Percussion Bang
 	12	Burner
 	13	Glass & Glam
 	14	Ice Ring
@@ -1367,7 +1367,7 @@
 	24	Car Engine 2
 	25	Car Horn
 	26	Boeeeen
-	27	R. Crossing
+	27	Railway Crossing
 	28	Compresser
 	29	Sword Boom!
 	30	Sword Cross
