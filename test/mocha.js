@@ -18,7 +18,10 @@ describe('JZZ.MIDI.programName()', function() {
   it('123 0 0 -> Bird', function() {
     assert.equal(JZZ.MIDI.programName(123, 0, 0), 'Bird');
   });
-  it('123 1 0 -> Dog', function() {
+  it('123 121 1 -> Dog (GM2)', function() {
+    assert.equal(JZZ.MIDI.programName(123, 121, 1), 'Dog');
+  });
+  it('123 1 0 -> Dog (GS)', function() {
     assert.equal(JZZ.MIDI.programName(123, 1, 0), 'Dog');
   });
   it('123 1 1 -> Bird Tweet *', function() {

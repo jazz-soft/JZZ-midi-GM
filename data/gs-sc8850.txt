@@ -419,7 +419,7 @@
 	0	Harp
 	1	Harp + Strings
 	2	Harp Synth
-	8	Uillean Harp
+	8	Uilleann Harp
 	16	Synth Harp
 	24	Yang Qin
 	25	Yang Qin 2
@@ -1130,9 +1130,9 @@
 109
 	0	Bagpipe
 	8	Didgeridoo
-	9	Uillean Pipe
-	10	Uillean Pipe Nm
-	11	Uillean Pipe Or
+	9	Uilleann Pipe
+	10	Uilleann Pipe Nm
+	11	Uilleann Pipe Or
 110
 	0	Fiddle
 	8	Er Hu

@@ -9,7 +9,7 @@
 	0	Electric Grand Piano
 	1	Electric Grand Piano (wide)
 3
-	0	Honky-tonk Piano 21-108 
+	0	Honky-tonk Piano
 	1	Honky-tonk Piano (wide)
 4
 	0	Electric Piano 1
