@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     var config = grunt.config('assemble');
     var scr = grunt.file.read(config.script).split(/\r?\n/);
     var gs = grunt.file.read(path.join(config.data, 'gs-sc8850.txt')).split(/\r?\n/);
-    var gm2 = grunt.file.read(path.join(config.data, 'gm2.txt')).split(/\r?\n/);
+    var gm2 = grunt.file.read(path.join(config.data, 'gm2-121.txt')).split(/\r?\n/);
 
     var dd = [];
     var a, b, i, k, n;

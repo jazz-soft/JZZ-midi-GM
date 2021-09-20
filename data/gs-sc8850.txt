@@ -129,7 +129,7 @@
 	26	JUNO Organ
 	27	Hybrid Organ
 	28	VS Organ
-	29	Digi Church
+	29	Digital Church Organ
 	30	JX-8P Organ
 	31	FM Organ
 	32	70's Electric Organ

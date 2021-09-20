@@ -68,7 +68,7 @@ var _gs = [
 {0:"Xylophone",8:"Xylophone Wide"},
 {0:"Tubular Bells",8:"Church Bell",9:"Carillon",10:"Church Bell 2",16:"Tubular Bell Wide"},
 {0:"Santur",1:"Santur 2",2:"Santur 3",8:"Cimbalom",16:"Zither 1",17:"Zither 2",24:"Dulcimer"},
-{0:"Organ 1",1:"Organ 101",2:"Full Organ 1",3:"Full Organ 2",4:"Full Organ 3",5:"Full Organ 4",6:"Full Organ 5",7:"Full Organ 6",8:"Tremolo Organ",9:"Organ o",10:"Full Organ 7",11:"Full Organ 8",12:"Full Organ 9",16:"60's Organ 1",17:"60's Organ 2",18:"60's Organ 3",19:"Farf Organ",24:"Cheese Organ",25:"D-50 Organ",26:"JUNO Organ",27:"Hybrid Organ",28:"VS Organ",29:"Digi Church",30:"JX-8P Organ",31:"FM Organ",32:"70's Electric Organ",33:"Even Bar",40:"Organ Bass",48:"5th Organ"},
+{0:"Organ 1",1:"Organ 101",2:"Full Organ 1",3:"Full Organ 2",4:"Full Organ 3",5:"Full Organ 4",6:"Full Organ 5",7:"Full Organ 6",8:"Tremolo Organ",9:"Organ o",10:"Full Organ 7",11:"Full Organ 8",12:"Full Organ 9",16:"60's Organ 1",17:"60's Organ 2",18:"60's Organ 3",19:"Farf Organ",24:"Cheese Organ",25:"D-50 Organ",26:"JUNO Organ",27:"Hybrid Organ",28:"VS Organ",29:"Digital Church Organ",30:"JX-8P Organ",31:"FM Organ",32:"70's Electric Organ",33:"Even Bar",40:"Organ Bass",48:"5th Organ"},
 {0:"Organ 2",1:"Jazz Organ",2:"Electric Organ 16+2",3:"Jazz Organ 2",4:"Jazz Organ 3",5:"Jazz Organ 4",6:"Jazz Organ 5",7:"Jazz Organ 6",8:"Chorus Organ 2",9:"Octave Organ",32:"Percussive Organ",33:"Percussive Organ 2",34:"Percussive Organ 3",35:"Percussive Organ 4"},
 {0:"Organ 3",8:"Rotary Organ 1",16:"Rotary Organ S",17:"Rock Organ 1",18:"Rock Organ 2",24:"Rotary Organ F"},
 {0:"Church Organ 1",8:"Church Organ 2",16:"Church Organ 3",24:"Organ Flute",32:"Tremolo Flute",33:"Theater Organ"},
@@ -321,7 +321,10 @@ function _strip(s) {
 var _program = {};
 for (i = 0; i < _instr.length; i++) _program[_strip(_instr[i])] = i;
 for (i = 0; i < _group.length; i++) _program[_strip(_group[i])] = i * 8;
-for (i in _more) if (_more.hasOwnProperty(i)) _program[_strip(i)] = _more[i];
+for (i in _more) {
+  /* istanbul ignore else */
+  if (_more.hasOwnProperty(i)) _program[_strip(i)] = _more[i];
+}
 
 var _percussion = {};
 for (i = 0; i < _perc.length; i++) _percussion[_strip(_perc[i])] = i + 27;
@@ -370,10 +373,13 @@ function _score(a, b) {
 function _search(h, s) {
   var k, l, m, n, q;
   l = 0; m = 0; n = 0;
-  for (k in h) if (h.hasOwnProperty(k)) {
-    q = _score(s, k);
-    if (q > n || q == n && k.length < l) {
-      l = k.length; m = h[k]; n = q;
+  for (k in h) {
+    /* istanbul ignore else */
+    if (h.hasOwnProperty(k)) {
+      q = _score(s, k);
+      if (q > n || q == n && k.length < l) {
+        l = k.length; m = h[k]; n = q;
+      }
     }
   }
   return [n, m];
@@ -429,9 +435,24 @@ JZZ.MIDI.guessValue = function(x) {
 };
 
 JZZ.MIDI.GM = {};
+JZZ.MIDI.GM.allGM2 = function() {
+  var ret = [];
+  for (var i = 0; i < 128; i++) {
+    for (var k in _gm2[i]) {
+      /* istanbul ignore else */
+      if (_gm2[i].hasOwnProperty(k)) ret.push([i, 121, parseInt(k)]);
+    }
+  }
+  return ret;
+};
 JZZ.MIDI.GM.allGS = function() {
   var ret = [];
-  for (var i = 0; i < 128; i++) for (var k in _gs[i]) if (_gs[i].hasOwnProperty(k)) ret.push([i, parseInt(k), 0]);
+  for (var i = 0; i < 128; i++) {
+    for (var k in _gs[i]) {
+      /* istanbul ignore else */
+      if (_gs[i].hasOwnProperty(k)) ret.push([i, parseInt(k), 0]);
+    }
+  }
   return ret;
 };
 

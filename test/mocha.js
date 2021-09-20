@@ -51,6 +51,9 @@ describe('JZZ.MIDI.percussionName()', function() {
 });
 
 describe('JZZ.MIDI.programValue()', function() {
+  it('1 -> 1', function() {
+    assert.equal(JZZ.MIDI.programValue(1), 1);
+  });
   it('Hammond -> Percussive Organ', function() {
     assert.equal(JZZ.MIDI.programName(JZZ.MIDI.programValue('Hammond')), 'Percussive Organ');
   });
@@ -78,6 +81,9 @@ describe('JZZ.MIDI.guessValue()', function() {
 });
 
 describe('JZZ.MIDI.GM', function() {
+  it('allGM2()', function() {
+    JZZ.MIDI.GM.allGM2();
+  });
   it('allGS()', function() {
     JZZ.MIDI.GM.allGS();
   });
