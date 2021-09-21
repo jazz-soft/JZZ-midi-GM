@@ -441,7 +441,7 @@
 	10	Tremolo Orchestra
 	11	Choir Strings
 	12	Strings + Horn
-	13	Strings  +Flute
+	13	Strings + Flute
 	14	Choir Strings 2
 	15	Choir Strings 3
 	16	Synth Strings
