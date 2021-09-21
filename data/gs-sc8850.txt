@@ -1362,8 +1362,8 @@
 	19	Open CD Tray
 	20	Audio Switch
 	21	Key Typing
-	22	SL 1
-	23	SL 2
+	22	Steam Locomotive 1
+	23	Steam Locomotive 2
 	24	Car Engine 2
 	25	Car Horn
 	26	Boeeeen
