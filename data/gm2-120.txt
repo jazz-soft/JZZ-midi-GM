@@ -1,0 +1,9 @@
+0	Standard Drum Kit
+8	Room Drum Kit
+16	Power Drum Kit
+24	Electro Drum Kit
+25	Analog Drum Kit
+32	Jazz Drum Kit
+40	Brush Drum Kit
+48	Orchestra Drum Kit
+56	SFX Kit

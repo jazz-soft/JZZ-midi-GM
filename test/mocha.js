@@ -24,8 +24,20 @@ describe('JZZ.MIDI.programName()', function() {
   it('123 1 0 -> Dog (GS)', function() {
     assert.equal(JZZ.MIDI.programName(123, 1, 0), 'Dog');
   });
+  it('123 121 64 -> Bird Tweet *', function() {
+    assert.equal(JZZ.MIDI.programName(123, 121, 64), 'Bird Tweet *');
+  });
+  it('123 64 0 -> Bird Tweet *', function() {
+    assert.equal(JZZ.MIDI.programName(123, 64, 0), 'Bird Tweet *');
+  });
   it('123 1 1 -> Bird Tweet *', function() {
     assert.equal(JZZ.MIDI.programName(123, 1, 1), 'Bird Tweet *');
+  });
+  it('0 120 0 -> Standard Drum Kit', function() {
+    assert.equal(JZZ.MIDI.programName(0, 120, 0), 'Standard Drum Kit');
+  });
+  it('0 120 1 -> Drum Kit *', function() {
+    assert.equal(JZZ.MIDI.programName(0, 120, 1), 'Drum Kit *');
   });
 });
 

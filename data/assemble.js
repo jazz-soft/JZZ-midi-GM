@@ -5,7 +5,8 @@ module.exports = function(grunt) {
     var config = grunt.config('assemble');
     var scr = grunt.file.read(config.script).split(/\r?\n/);
     var gs = grunt.file.read(path.join(config.data, 'gs-sc8850.txt')).split(/\r?\n/);
-    var gm2 = grunt.file.read(path.join(config.data, 'gm2-121.txt')).split(/\r?\n/);
+    var gm2_121 = grunt.file.read(path.join(config.data, 'gm2-121.txt')).split(/\r?\n/);
+    var gm2_120 = grunt.file.read(path.join(config.data, 'gm2-120.txt')).split(/\r?\n/);
 
     var dd = [];
     var a, b, i, k, n;
@@ -37,7 +38,7 @@ module.exports = function(grunt) {
           continue;
         }
       }
-      else grunt.fail.fatal('input error: ' + gst[i]); 
+      else grunt.fail.fatal('input error: ' + gs[i]); 
     }
     head.push('var _gs = [');
     b = [];
@@ -52,8 +53,8 @@ module.exports = function(grunt) {
     head.push('];');
 
     dd = [];
-    for (i = 0; i < gm2.length; i++) {
-      a = gm2[i].split('\t');
+    for (i = 0; i < gm2_121.length; i++) {
+      a = gm2_121[i].split('\t');
       if (a.length == 1) {
         n = parseInt(a[0]);
         if (n != a[0]) continue;
@@ -67,7 +68,7 @@ module.exports = function(grunt) {
           continue;
         }
       }
-      else grunt.fail.fatal('input error: ' + gm2t[i]); 
+      else grunt.fail.fatal('input error: ' + gm2_121[i]); 
     }
     head.push('var _gm2 = [');
     b = [];
@@ -80,6 +81,22 @@ module.exports = function(grunt) {
     }
     head.push(b.join(',' + eol));
     head.push('];');
+
+    b = [];
+    for (i = 0; i < gm2_120.length; i++) {
+      a = gm2_120[i].split('\t');
+      if (a.length < 2) continue;
+      else if (a.length == 2) {
+        k = parseInt(a[0]);
+        if (k == a[0]) {
+          b.push(a[0] + ':' + JSON.stringify(a[1]));
+        }
+      }
+      else grunt.fail.fatal('input error: ' + gm2_120[i]); 
+    }
+    head.push('var _gm2dr = {');
+    head.push(b.join(','));
+    head.push('};');
 
     grunt.file.write(config.script, head.concat(tail).join(eol));
   }

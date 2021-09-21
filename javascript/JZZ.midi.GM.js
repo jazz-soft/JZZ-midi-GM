@@ -311,6 +311,9 @@ var _gm2 = [
 {0:"Applause",1:"Laughing",2:"Screaming",3:"Punch",4:"Heart Beat",5:"Footsteps"},
 {0:"Gunshot",1:"Machine Gun",2:"Lasergun",3:"Explosion"}
 ];
+var _gm2dr = {
+0:"Standard Drum Kit",8:"Room Drum Kit",16:"Power Drum Kit",24:"Electro Drum Kit",25:"Analog Drum Kit",32:"Jazz Drum Kit",40:"Brush Drum Kit",48:"Orchestra Drum Kit",56:"SFX Kit"
+};
 //#end
 
 function _strip(s) {
@@ -391,10 +394,18 @@ JZZ.MIDI.programName = function(n, m, l) {
   var s;
   if (n >= 0 && n <= 127) {
     if (typeof m == 'undefined' && typeof l == 'undefined') return _instr[n];
-    if (m == 0x79) s = _gm2[n][l];
-    if (s) return s;
-    if (!l) s = _gs[n][m];
-    if (s) return s;
+    if (m == 0x79) {
+      s = _gm2[n][l];
+      if (s) return s;
+    }
+    if (m == 0x78) {
+      if (!l) s = _gm2dr[n];
+      return s || 'Drum Kit *';
+    }
+    if (!l) {
+      s = _gs[n][m];
+      if (s) return s;
+    }
     return _instr[n] + ' *';
   }
 };
