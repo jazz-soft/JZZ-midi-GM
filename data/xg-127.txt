@@ -1,0 +1,36 @@
+0	Standard Kit
+1	Standard Kit 2
+2	Dry Kit
+3	Bright Kit
+4	Skim Kit
+5	Slim Kit
+6	Rogue Kit
+7	Hob Kit
+8	Room Kit
+9	Dark Room Kit
+16	Rock Kit
+17	Rock Kit 2
+24	Electro Kit
+25	Analog Kit
+26	Analog Kit 2
+27	Dance Kit
+28	Hip Hop Kit
+29	Jungle Kit
+30	Apogee Kit
+31	Perigee Kit
+32	Jazz Kit
+33	Jazz Kit 2
+40	Brush Kit
+41	Brush Kit 2
+48	Symphony Kit
+56	Natural Kit
+57	Natural Funk Kit
+64	Tramp Kit
+65	Amber Kit
+66	Coffin Kit
+80	Live! Standard Kit
+81	Live! Funk Kit
+82	Live! Brush Kit
+83	Live! Standard + Percussion Kit
+84	Live! Funk + Percussion Kit
+85	Live! Brush + Percussion Kit

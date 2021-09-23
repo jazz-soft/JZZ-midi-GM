@@ -1,0 +1,12 @@
+0	SFX Kit 1
+1	SFX Kit 2
+16	Techno Kit K/S
+17	Techno Kit Hi
+18	Techno Kit Lo
+32	Sakura Kit
+33	Small Latin Kit
+34	China Kit
+40	Live! AfroCuban Kit
+41	Live! AfroCuban Kit 2
+42	Live! Brazilian Kit
+43	Live! PopLatin Kit

@@ -1,0 +1,58 @@
+0	Cutting Noise
+1	Cutting Noise 2
+2	Distorted Cutting Noise
+3	String Slap
+4	Bass Slide
+5	Pick Scrape
+16	Flute Key Click
+32	Shower
+33	Thunder
+34	Wind
+35	Stream
+36	Bubble
+37	Feed
+38	Cave
+48	Dog
+49	Horse
+50	Bird Tweet 2
+51	Kitty
+52	Growl
+53	Haunted
+54	Ghost
+55	Maou
+56	Insects
+57	Bacteria
+64	Phone Call
+65	Door Squeak
+66	Door Slam
+67	Scratch Cut
+68	Scratch Split
+69	Wind Chime
+70	Telephone Ring 2
+71	Another Scratch
+72	Turn Table
+80	Car Engine Ignition
+81	Car Tires Squeal
+82	Car Passing
+83	Car Crash
+84	Siren
+85	Train
+86	Jet Plane
+87	Starship
+88	Burst
+89	Roller Coaster
+90	Submarine
+91	Connectivity
+92	Mystery
+93	Charging
+96	Laugh
+97	Scream
+98	Punch
+99	Heartbeat
+100	Footsteps
+101	Applause 2
+112	Machine Gun
+113	Laser Gun
+114	Explosion
+115	Firework
+116	Fireball
