@@ -39,6 +39,12 @@ describe('JZZ.MIDI.programName()', function() {
   it('0 120 1 -> Drum Kit *', function() {
     assert.equal(JZZ.MIDI.programName(0, 120, 1), 'Drum Kit *');
   });
+  it('24 0 96 -> Ukulele', function() {
+    assert.equal(JZZ.MIDI.programName(24, 0, 96), 'Ukulele');
+  });
+  it('24 0 97 -> Acoustic Guitar (nylon) *', function() {
+    assert.equal(JZZ.MIDI.programName(24, 0, 97), 'Acoustic Guitar (nylon) *');
+  });
 });
 
 describe('JZZ.MIDI.groupName()', function() {

@@ -139,7 +139,8 @@
 	98	Log Drums
 13
 	0	Xylophone
-14	0	Tubular Bells
+14
+	0	Tubular Bells
 	96	Church Bells
 	97	Carillon
 15
@@ -487,7 +488,8 @@
 	64	Cello Section
 	65	Hard Attack Cello Section
 	66	Slow Attack Cello Section
-43	0	Contrabass
+43
+	0	Contrabass
 	64	Contrabass Section
 	65	Hard Attack Contrabass Section
 	66	Slow Attack Contrabass Section
@@ -1031,7 +1033,8 @@
 	65	Shining Star
 	66	Bright Stab
 	96	Smokey
-101	0	Goblins
+101
+	0	Goblins
 	64	Goblins Synth
 	65	Creeper
 	66	Ring Pad
