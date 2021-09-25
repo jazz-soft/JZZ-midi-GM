@@ -8,6 +8,9 @@ module.exports = function(grunt) {
     var gm2_121 = grunt.file.read(path.join(config.data, 'gm2-121.txt')).split(/\r?\n/);
     var gm2_120 = grunt.file.read(path.join(config.data, 'gm2-120.txt')).split(/\r?\n/);
     var xg = grunt.file.read(path.join(config.data, 'xg.txt')).split(/\r?\n/);
+    var xg_64 = grunt.file.read(path.join(config.data, 'xg-64.txt')).split(/\r?\n/);
+    var xg_126 = grunt.file.read(path.join(config.data, 'xg-126.txt')).split(/\r?\n/);
+    var xg_127 = grunt.file.read(path.join(config.data, 'xg-127.txt')).split(/\r?\n/);
 
     var dd = [];
     var a, b, i, k, n;
@@ -126,6 +129,54 @@ module.exports = function(grunt) {
       else grunt.fail.fatal('input error: ' + gm2_120[i]); 
     }
     head.push('var _gm2dr = {');
+    head.push(b.join(','));
+    head.push('};');
+
+    b = [];
+    for (i = 0; i < xg_64.length; i++) {
+      a = xg_64[i].split('\t');
+      if (a.length < 2) continue;
+      else if (a.length == 2) {
+        k = parseInt(a[0]);
+        if (k == a[0]) {
+          b.push(a[0] + ':' + JSON.stringify(a[1]));
+        }
+      }
+      else grunt.fail.fatal('input error: ' + xg_64[i]); 
+    }
+    head.push('var _xg64 = {');
+    head.push(b.join(','));
+    head.push('};');
+
+    b = [];
+    for (i = 0; i < xg_126.length; i++) {
+      a = xg_126[i].split('\t');
+      if (a.length < 2) continue;
+      else if (a.length == 2) {
+        k = parseInt(a[0]);
+        if (k == a[0]) {
+          b.push(a[0] + ':' + JSON.stringify(a[1]));
+        }
+      }
+      else grunt.fail.fatal('input error: ' + xg_126[i]); 
+    }
+    head.push('var _xg126 = {');
+    head.push(b.join(','));
+    head.push('};');
+
+    b = [];
+    for (i = 0; i < xg_127.length; i++) {
+      a = xg_127[i].split('\t');
+      if (a.length < 2) continue;
+      else if (a.length == 2) {
+        k = parseInt(a[0]);
+        if (k == a[0]) {
+          b.push(a[0] + ':' + JSON.stringify(a[1]));
+        }
+      }
+      else grunt.fail.fatal('input error: ' + xg_127[i]); 
+    }
+    head.push('var _xg127 = {');
     head.push(b.join(','));
     head.push('};');
 

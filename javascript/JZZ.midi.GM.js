@@ -444,6 +444,15 @@ var _xg = [
 var _gm2dr = {
 0:"Standard Drum Kit",8:"Room Drum Kit",16:"Power Drum Kit",24:"Electro Drum Kit",25:"Analog Drum Kit",32:"Jazz Drum Kit",40:"Brush Drum Kit",48:"Orchestra Drum Kit",56:"SFX Kit"
 };
+var _xg64 = {
+0:"Cutting Noise",1:"Cutting Noise 2",2:"Distorted Cutting Noise",3:"String Slap",4:"Bass Slide",5:"Pick Scrape",16:"Flute Key Click",32:"Shower",33:"Thunder",34:"Wind",35:"Stream",36:"Bubble",37:"Feed",38:"Cave",48:"Dog",49:"Horse",50:"Bird Tweet 2",51:"Kitty",52:"Growl",53:"Haunted",54:"Ghost",55:"Maou",56:"Insects",57:"Bacteria",64:"Phone Call",65:"Door Squeak",66:"Door Slam",67:"Scratch Cut",68:"Scratch Split",69:"Wind Chime",70:"Telephone Ring 2",71:"Another Scratch",72:"Turn Table",80:"Car Engine Ignition",81:"Car Tires Squeal",82:"Car Passing",83:"Car Crash",84:"Siren",85:"Train",86:"Jet Plane",87:"Starship",88:"Burst",89:"Roller Coaster",90:"Submarine",91:"Connectivity",92:"Mystery",93:"Charging",96:"Laugh",97:"Scream",98:"Punch",99:"Heartbeat",100:"Footsteps",101:"Applause 2",112:"Machine Gun",113:"Laser Gun",114:"Explosion",115:"Firework",116:"Fireball"
+};
+var _xg126 = {
+0:"SFX Kit 1",1:"SFX Kit 2",16:"Techno SFX Kit K/S",17:"Techno SFX Kit Hi",18:"Techno SFX Kit Lo",32:"Sakura SFX Kit",33:"Small Latin SFX Kit",34:"China SFX Kit",40:"Live! AfroCuban SFX Kit",41:"Live! AfroCuban SFX Kit 2",42:"Live! Brazilian SFX Kit",43:"Live! PopLatin SFX Kit"
+};
+var _xg127 = {
+0:"Standard Drum Kit",1:"Standard Drum Kit 2",2:"Dry Drum Kit",3:"Bright Drum Kit",4:"Skim Drum Kit",5:"Slim Drum Kit",6:"Rogue Drum Kit",7:"Hob Drum Kit",8:"Room Drum Kit",9:"Dark Room Drum Kit",16:"Rock Drum Kit",17:"Rock Drum Kit 2",24:"Electro Drum Kit",25:"Analog Drum Kit",26:"Analog Drum Kit 2",27:"Dance Drum Kit",28:"Hip Hop Drum Kit",29:"Jungle Drum Kit",30:"Apogee Drum Kit",31:"Perigee Drum Kit",32:"Jazz Drum Kit",33:"Jazz Drum Kit 2",40:"Brush Drum Kit",41:"Brush Drum Kit 2",48:"Symphony Drum Kit",56:"Natural Drum Kit",57:"Natural Funk Drum Kit",64:"Tramp Drum Kit",65:"Amber Drum Kit",66:"Coffin Drum Kit",80:"Live! Standard Drum Kit",81:"Live! Funk Drum Kit",82:"Live! Brush Drum Kit",83:"Live! Standard + Percussion Kit",84:"Live! Funk + Percussion Kit",85:"Live! Brush + Percussion Kit"
+};
 //#end
 
 function _strip(s) {
@@ -526,6 +535,10 @@ JZZ.MIDI.programName = function(n, m, l) {
     if (typeof m == 'undefined' && typeof l == 'undefined') return _instr[n];
     if (m == 0 && l) {
       s = _xg[n][l];
+      if (s) return s;
+    }
+    if (m == 0x40 && !l) {
+      s = _xg64[n];
       if (s) return s;
     }
     if (m == 0x79) {
