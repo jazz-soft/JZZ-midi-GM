@@ -549,6 +549,14 @@ JZZ.MIDI.programName = function(n, m, l) {
       if (!l) s = _gm2dr[n];
       return s || 'Drum Kit *';
     }
+    if (m == 0x7e) {
+      if (!l) s = _xg126[n];
+      return s || 'SFX Kit *';
+    }
+    if (m == 0x7f) {
+      if (!l) s = _xg127[n];
+      return s || 'Drum Kit *';
+    }
     if (!l) {
       s = _gs[n][m];
       if (s) return s;

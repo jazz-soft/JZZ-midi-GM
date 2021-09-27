@@ -42,6 +42,18 @@ describe('JZZ.MIDI.programName()', function() {
   it('0 120 1 -> Drum Kit *', function() {
     assert.equal(JZZ.MIDI.programName(0, 120, 1), 'Drum Kit *');
   });
+  it('0 127 0 -> Standard Drum Kit', function() {
+    assert.equal(JZZ.MIDI.programName(0, 127, 0), 'Standard Drum Kit');
+  });
+  it('0 127 1 -> Drum Kit *', function() {
+    assert.equal(JZZ.MIDI.programName(0, 127, 1), 'Drum Kit *');
+  });
+  it('34 126 0 -> Standard Drum Kit', function() {
+    assert.equal(JZZ.MIDI.programName(34, 126, 0), 'China SFX Kit');
+  });
+  it('34 126 1 -> Drum Kit *', function() {
+    assert.equal(JZZ.MIDI.programName(34, 126, 1), 'SFX Kit *');
+  });
   it('24 0 96 -> Ukulele', function() {
     assert.equal(JZZ.MIDI.programName(24, 0, 96), 'Ukulele');
   });
