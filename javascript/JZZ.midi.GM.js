@@ -603,21 +603,50 @@ JZZ.MIDI.guessValue = function(x) {
 JZZ.MIDI.GM = {};
 JZZ.MIDI.GM.allGM2 = function() {
   var ret = [];
-  for (var i = 0; i < 128; i++) {
-    for (var k in _gm2[i]) {
+  var i, k;
+  for (i = 0; i < 128; i++) {
+    for (k in _gm2[i]) {
       /* istanbul ignore else */
       if (_gm2[i].hasOwnProperty(k)) ret.push([i, 121, parseInt(k)]);
     }
+  }
+  for (k in _gm2dr) {
+    /* istanbul ignore else */
+    if (_gm2dr.hasOwnProperty(k)) ret.push([parseInt(k), 120, 0]);
   }
   return ret;
 };
 JZZ.MIDI.GM.allGS = function() {
   var ret = [];
-  for (var i = 0; i < 128; i++) {
-    for (var k in _gs[i]) {
+  var i, k;
+  for (i = 0; i < 128; i++) {
+    for (k in _gs[i]) {
       /* istanbul ignore else */
       if (_gs[i].hasOwnProperty(k)) ret.push([i, parseInt(k), 0]);
     }
+  }
+  return ret;
+};
+JZZ.MIDI.GM.allXG = function() {
+  var ret = [];
+  var i, k;
+  for (i = 0; i < 128; i++) {
+    for (k in _xg[i]) {
+      /* istanbul ignore else */
+      if (_xg[i].hasOwnProperty(k)) ret.push([i, 0, parseInt(k)]);
+    }
+  }
+  for (k in _xg64) {
+    /* istanbul ignore else */
+    if (_xg64.hasOwnProperty(k)) ret.push([parseInt(k), 64, 0]);
+  }
+  for (k in _xg126) {
+    /* istanbul ignore else */
+    if (_xg126.hasOwnProperty(k)) ret.push([parseInt(k), 126, 0]);
+  }
+  for (k in _xg127) {
+    /* istanbul ignore else */
+    if (_xg127.hasOwnProperty(k)) ret.push([parseInt(k), 127, 0]);
   }
   return ret;
 };

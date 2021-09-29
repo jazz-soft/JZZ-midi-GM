@@ -14,7 +14,7 @@
   ],
   "author": "jazz-soft (https://jazz-soft.net/)",
   "dependencies": {
-    "jzz": "^1.4.1"
+    "jzz": "^1.4.2"
   },
   "devDependencies": {
     "eslint": "^7.32.0",

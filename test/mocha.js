@@ -115,9 +115,12 @@ describe('JZZ.MIDI.guessValue()', function() {
 
 describe('JZZ.MIDI.GM', function() {
   it('allGM2()', function() {
-    JZZ.MIDI.GM.allGM2();
+    assert.equal(JZZ.MIDI.GM.allGM2().length, 265);
   });
   it('allGS()', function() {
-    JZZ.MIDI.GM.allGS();
+    assert.equal(JZZ.MIDI.GM.allGS().length, 1261);
+  });
+  it('allXG()', function() {
+    assert.equal(JZZ.MIDI.GM.allXG().length, 1138);
   });
 });
