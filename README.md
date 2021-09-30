@@ -1,6 +1,6 @@
 # JZZ-midi-GM
 
-## General MIDI / GM2 / GS / XG instrument names: MIDI to string / string to MIDI
+### General MIDI / GM2 / GS / XG instrument names: MIDI to string / string to MIDI
 
 [![npm](https://img.shields.io/npm/v/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![npm](https://img.shields.io/npm/dt/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
@@ -58,16 +58,16 @@ require(['JZZ', 'JZZ.midi.GM'], function(JZZ, gm) {
 
 ## API
 ### MIDI to string
-`JZZ.MIDI.programName(midi)` -
+`JZZ.MIDI.programName(midi)` -  
 map MIDI program value to a General MIDI instrument name.
 
-`JZZ.MIDI.programName(midi, msb, lsb)` -
+`JZZ.MIDI.programName(midi, msb, lsb)` -  
 map MIDI program value and bank msb/lsb to a GM2/GS/XG instrument name.
 
-`JZZ.MIDI.groupName(midi)` -
+`JZZ.MIDI.groupName(midi)` -  
 map MIDI program value to a General MIDI group name.
 
-`JZZ.MIDI.percussionName(midi)` -
+`JZZ.MIDI.percussionName(midi)` -  
 map MIDI note value to General a MIDI percussion name.
 
 ```js
@@ -85,16 +85,16 @@ console.log(JZZ.MIDI.percussionName(60));
 ```
 
 ### string to MIDI
-`JZZ.MIDI.programValue(str)` -
-map instrument name to a MIDI program (GM only);  
+`JZZ.MIDI.programValue(str)` -  
+map instrument name to a MIDI program (GM only);
 if there is no exact match, try the best guess.
 
-`JZZ.MIDI.noteValue(str)` -
-map percussion name to a MIDI note number;  
+`JZZ.MIDI.noteValue(str)` -  
+map percussion name to a MIDI note number;
 if there is no exact match, try the best guess.
 
-`JZZ.MIDI.guessValue(str)` -
-map program or percussion name (whatever matches best) to a MIDI value;  
+`JZZ.MIDI.guessValue(str)` -  
+map program or percussion name (whatever matches best) to a MIDI value;
 if the return value is negative, it's the percussion note value with a minus sign, otherwise, it's the program value.
 
 ```js
@@ -111,7 +111,7 @@ else console.log(JZZ.MIDI.programName(n));
 ```
 
 ### list all instruments
-`allGM2() / allGS() / allXG()` -
+`allGM2() / allGS() / allXG()` -  
 return a complete list of GM2/GS/XG programs as an array of of triplets `[program-number, bank-msb, bank-lsb]`.
 
 ### JZZ helpers
