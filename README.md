@@ -1,11 +1,11 @@
 # JZZ-midi-GM
 
-### General MIDI / GM2 / GS / XG instrument names: MIDI to string / string to MIDI
-
 [![npm](https://img.shields.io/npm/v/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![npm](https://img.shields.io/npm/dt/jzz-midi-gm.svg)](https://www.npmjs.com/package/jzz-midi-gm)
 [![build](https://github.com/jazz-soft/JZZ-midi-GM/actions/workflows/build.yml/badge.svg)](https://github.com/jazz-soft/JZZ-midi-GM/actions)
 [![Coverage Status](https://coveralls.io/repos/github/jazz-soft/JZZ-midi-GM/badge.svg?branch=master)](https://coveralls.io/github/jazz-soft/JZZ-midi-GM?branch=master)
+
+### General MIDI / GM2 / GS / XG instrument names: MIDI to string / string to MIDI
 
 ## Install
 
