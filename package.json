@@ -1,7 +1,7 @@
 {
   "name": "jzz-midi-gm",
-  "version": "1.2.5",
-  "description": "General MIDI instrument names",
+  "version": "1.2.6",
+  "description": "General MIDI / GM2 / GS / XG instrument names",
   "main": "javascript/JZZ.midi.GM.js",
   "scripts": {
     "test": "nyc mocha",
@@ -10,7 +10,10 @@
   },
   "keywords": [
     "midi",
-    "general-midi"
+    "general-midi",
+    "GM2",
+    "GS",
+    "XG"
   ],
   "author": "jazz-soft (https://jazz-soft.net/)",
   "dependencies": {
