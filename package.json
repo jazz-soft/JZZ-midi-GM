@@ -1,6 +1,6 @@
 {
   "name": "jzz-midi-gm",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "General MIDI / GM2 / GS / XG instrument names",
   "main": "javascript/JZZ.midi.GM.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "keywords": [
     "midi",
     "general-midi",
+    "GM",
     "GM2",
     "GS",
     "XG"
