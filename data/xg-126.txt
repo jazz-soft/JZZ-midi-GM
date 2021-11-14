@@ -6,6 +6,7 @@
 32	Sakura SFX Kit
 33	Small Latin SFX Kit
 34	China SFX Kit
+35	Arabic Kit
 40	Live! AfroCuban SFX Kit
 41	Live! AfroCuban SFX Kit 2
 42	Live! Brazilian SFX Kit
