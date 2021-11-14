@@ -1,14 +1,15 @@
 0
 	0	Grand Piano
 	1	Grand Piano KSP
+	2	Grand Piano Dark
 	18	Mellow Grand Piano
 	40	Piano Strings
-	41	Dream
-	64	Concert Grand
-	65	Concert Grand KSP
+	41	Dream Piano
+	64	Concert Grand Piano
+	65	Concert Grand Piano KSP
 	66	Double Concert Grand
-	67	MIDI Grand 1
-	68	MIDI Grand 2
+	67	MIDI Grand Piano 1
+	68	MIDI Grand Piano 2
 	69	Oldest Acoustic Piano
 1
 	0	Bright Piano
@@ -19,8 +20,8 @@
 	40	Synth Pad Piano
 	64	Bright Concert Grand
 	65	Bright Concert Grand KSP
-	66	MIDI Grand 3
-	67	MIDI Grand 4
+	66	MIDI Grand Piano 3
+	67	MIDI Grand Piano 4
 	68	Old Piano
 2
 	0	Electric Grand Piano
@@ -53,10 +54,10 @@
 	75	Nasal DX
 	76	Nasal DX Detuned
 	77	Din
-	78	4 Way EP
-	79	Easy EP
-	80	Sine EP
-	81	Cheap EP
+	78	4 Way Electric Piano
+	79	Easy Electric Piano
+	80	Sine Electric Piano
+	81	Cheap Electric Piano
 5
 	0	Electric Piano 2
 	1	Electric Piano 2 KSP
@@ -159,8 +160,8 @@
 	35	70's Drawbar Organ 1
 	36	Drawbar Organ 2
 	37	60's Drawbar Organ 3
-	38	Even Bar
-	40	16+2"2/3
+	38	Even Bar Organ
+	40	16+2"2/3 Organ
 	64	Organ Bass
 	65	70's Drawbar Organ
 	66	Cheezy Organ
@@ -170,11 +171,11 @@
 	70	Gospel Organ
 	71	Click Gospel Organ
 	72	Chapel Organ
-	73	Dim Chorus
-	74	Dawn
+	73	Dim Chorus Organ
+	74	Dawn Organ
 	75	Mellorgan
 	76	Fuzzorgan
-	77	FMO
+	77	FM Organ
 	78	70's Drawbar Organ 3
 	79	Mood Organ
 17
@@ -186,35 +187,35 @@
 	64	Jazz Organ
 	65	Warm Jazz Organ
 	66	Click Organ
-	67	Grace
+	67	Grace Organ
 	68	Crunchy Grace
-	69	Dim Click
-	70	Dusk
-	71	FM Click
-	72	Spoony
-	73	Super Rotary
+	69	Dim Click Organ
+	70	Dusk Organ
+	71	FM Click Organ
+	72	Spoony Organ
+	73	Super Rotary Organ
 	74	Lo Fi Organ
 	75	Beep Organ
-	76	Belief
+	76	Belief Organ
 	77	Snap Organ
 18
 	0	Rock Organ
 	64	Rotary Organ
-	65	Slow Rotary
-	66	Fast Rotary
-	67	Glacial Rotary
+	65	Slow Rotary Organ
+	66	Fast Rotary Organ
+	67	Glacial Rotary Organ
 19
 	0	Church Organ
 	32	Church Organ 3
 	35	Church Organ 2
-	40	Notre Dame
+	40	Notre Dame Organ
 	64	Organ Flute
 	65	Tremolo Organ Flute
 20
 	0	Reed Organ
 	32	Reed Organ Detuned
 	40	Puff Organ
-	64	Synth Reed Dark
+	64	Synth Reed Dark Organ
 21
 	0	Accordion
 	32	Accord It
@@ -246,27 +247,27 @@
 	35	12-string Guitar
 	40	Nylon & Steel Guitar
 	41	Steel Guitar with Body Sound
-	64	Nashville
-	65	Nashville Resonant
-	66	Nashville 12
-	67	Old Sample
+	64	Nashville Guitar
+	65	Nashville Resonant Guitar
+	66	Nashville 12 Guitar
+	67	Old Sample Guitar
 	96	Mandolin
 	97	Mandolin Ensemble
 26
 	0	Jazz Guitar
 	18	Mellow Guitar
-	32	Jazz Amp
+	32	Jazz Amp Guitar
 	40	Organ Guitar
 	41	Octave Plate
-	64	Super Jazz Middle
-	65	Super Jazz Bridge
-	66	Super Jazz Detuned
-	67	Super Jazz Resonant
+	64	Super Jazz Middle Guitar
+	65	Super Jazz Bridge Guitar
+	66	Super Jazz Detuned Guitar
+	67	Super Jazz Resonant Guitar
 	68	DX Jazz Guitar
 	69	DX Jazz Guitar Detuned
-	70	Pulse Jazz
-	71	Roughcaster Neck
-	72	Roughcaster Middle
+	70	Pulse Jazz Guitar
+	71	Roughcaster Neck Guitar
+	72	Roughcaster Middle Guitar
 	96	Pedal Steel Guitar
 27
 	0	Clean Guitar
@@ -277,10 +278,10 @@
 	66	Mid Tone Guitar Stereo
 	67	Nasal Guitar
 	68	Nasal Guitar Stereo
-	69	Hammer Middle
-	70	Hammer Bridge
-	71	Hammer Double
-	72	Hammer Stereo
+	69	Hammer Middle Guitar
+	70	Hammer Bridge Guitar
+	71	Hammer Double Guitar
+	72	Hammer Stereo Guitar
 	73	FM Chorus Guitar
 	74	FM Chorus Guitar Soft
 	75	Pesky Guitar
@@ -290,22 +291,22 @@
 	40	Funk Guitar 1
 	41	Muted Steel Guitar
 	43	Funk Guitar 2
-	45	Jazz Man
-	64	Wrench
-	65	Wrench Heavy
-	66	Wrench Double
-	67	Tin
+	45	Jazz Man Guitar
+	64	Wrench Guitar
+	65	Wrench Heavy Guitar
+	66	Wrench Double Guitar
+	67	Tin Guitar
 	68	Groovey Muted Guitar
 	96	Muted Distortion Guitar
 29
 	0	Overdriven Guitar
 	32	Overdriven Guitar Detuned
-	40	Parallel
+	40	Parallel Guitar
 	43	Guitar Pinch
-	64	Manhattan Middle
-	65	Manhattan Bridge
-	66	Manhattan Detuned
-	67	Manhattan Powered
+	64	Manhattan Middle Guitar
+	65	Manhattan Bridge Guitar
+	66	Manhattan Detuned Guitar
+	67	Manhattan Powered Guitar
 30
 	0	Distortion Guitar
 	12	Distorted Rhythm Guitar
@@ -313,19 +314,19 @@
 	35	Distortion Guitar 3
 	36	Power Guitar 2
 	37	Power Guitar 1
-	38	Distorted Fifths
+	38	Distorted Fifths Guitar
 	40	Feedback Guitar
 	41	Feedback Guitar 2
-	42	Twin Distortion
+	42	Twin Distortion Guitar
 	43	Rock Rhythm Guitar 2
 	45	Rock Rhythm Guitar 1
-	64	Bite
-	65	Bite Resonant
-	66	Bite Detuned
-	67	Bite Plus
-	68	Burnout
-	69	Bombay
-	70	Bombay Sustained
+	64	Bite Guitar
+	65	Bite Resonant Guitar
+	66	Bite Detuned Guitar
+	67	Bite Plus Guitar
+	68	Burnout Guitar
+	69	Bombay Guitar
+	70	Bombay Sustained Guitar
 	71	Jaipur
 31
 	0	Guitar Harmonics
@@ -340,15 +341,15 @@
 	41	Pick Acoustic Bass
 	43	Blink Bass
 	45	Velocity Crossfade Upright Bass
-	64	Boston
-	65	Boston Bright
-	66	Coolth
-	67	Coolth Bright
+	64	Boston Bass
+	65	Boston Bright Bass
+	66	Coolth Bass
+	67	Coolth Bright Bass
 	96	Walking Synth Bass
-	97	Dim & Cool
+	97	Dim & Cool Bass
 33
 	0	Finger Bass
-	18	Finger Dark
+	18	Finger Dark Bass
 	27	Flange Bass
 	32	Finger Bass Detuned
 	40	Bass & Distorted Electric Guitar
@@ -356,8 +357,8 @@
 	45	Finger Bass 2
 	64	Jazzy Bass
 	65	Modulated Bass
-	66	Chase
-	67	Chase Resonant
+	66	Chase Bass
+	67	Chase Resonant Bass
 	68	Blue Bass
 	69	Jazzy Bass 2
 34
@@ -365,8 +366,8 @@
 	6	Pick Bass 2
 	28	Muted Pick Bass
 	40	Pick Bass & Muted Guitar
-	64	Hard Pick
-	65	Hard Pick Resonant
+	64	Hard Pick Bass
+	65	Hard Pick Resonant Bass
 	66	Pick Bass Plus
 	67	Pick Bass 4
 35
@@ -374,27 +375,27 @@
 	32	Fretless Bass 2
 	33	Fretless Bass 3
 	34	Fretless Bass 4
-	64	Powered Fretless
-	65	Powered Fretless Resonant
+	64	Powered Fretless Bass
+	65	Powered Fretless Resonant Bass
 	66	Talking Bass
-	67	Noisy Fretless
-	96	Synth Fretless
-	97	Smooth Fretless
+	67	Noisy Fretless Bass
+	96	Synth Fretless Bass
+	97	Smooth Fretless Bass
 36
 	0	Slap Bass 1
 	21	Cosmic Slap
 	27	Resonant Slap
 	32	Punch Thumb Bass
-	64	Slapper
-	65	Thumb & Slap
-	66	Glitzy Slap
-	67	FM Slap
-	68	FM Slap Detuned
+	64	Slapper Bass
+	65	Thumb & Slap Bass
+	66	Glitzy Slap Bass
+	67	FM Slap Bass
+	68	FM Slap Detuned Bass
 37
 	0	Slap Bass 2
-	16	Bright Slap Split
-	22	Wah Slap
-	43	Velocity Switch Slap
+	16	Bright Slap Split Bass
+	22	Wah Slap Bass
+	43	Velocity Switch Slap Bass
 38
 	0	Synth Bass 1
 	18	Synth Bass 1 Dark
@@ -470,16 +471,16 @@
 40
 	0	Violin
 	8	Slow Violin
-	40	Unison
-	64	Cadenza
-	65	Cadenza Dark
+	40	Unison Violin
+	64	Cadenza Violin
+	65	Cadenza Dark Violin
 	66	Violin Section
 	67	Hard Attack Violin Section
 	68	Slow Attack Violin Section
 41
 	0	Viola
 	40	Viola Double
-	64	Sonata
+	64	Sonata Viola
 	65	Viola Section
 	66	Hard Attack Viola Section
 	67	Slow Attack Viola Section
@@ -497,9 +498,9 @@
 	0	Tremolo Strings
 	8	Slow Tremolo Strings
 	45	Suspense Strings
-	64	Fear
-	65	Fear Detuned
-	66	Apocalypse
+	64	Fear Strings
+	65	Fear Detuned Strings
+	66	Apocalypse Strings
 	67	Bright Tremolo Strings
 45
 	0	Pizzicato Strings
@@ -523,17 +524,17 @@
 	14	Sforzando Strings
 	24	Arco Strings
 	35	60's Strings
-	40	Orchestra
-	41	Orchestra 2
+	40	Orchestra Strings
+	41	Orchestra Strings 2
 	42	Tremolo Orchestra
 	45	Velocity Strings
-	52	Lento
+	52	Lento Strings
 	64	Super Strings
 	65	Super Strings Stereo
-	66	Triste
-	67	Basso
-	68	Staccato High
-	69	Staccato Low
+	66	Triste Strings
+	67	Basso Strings
+	68	Staccato High Strings
+	69	Staccato Low Strings
 	70	Hall Strings
 	71	Strings + French Horn
 	72	Solid Strings
@@ -546,7 +547,7 @@
 	3	Stereo Slow Strings
 	8	Legato Strings
 	40	Warm Strings
-	41	Kingdom
+	41	Kingdom Strings
 	64	70's Strings
 	65	String Ensemble 3
 50
@@ -764,7 +765,7 @@
 	0	Oboe
 	64	Heinz
 	65	Heinz Unison
-	66	Oboe Expression
+	66	Oboe Expressive
 69
 	0	English Horn
 70

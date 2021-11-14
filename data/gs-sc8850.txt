@@ -28,12 +28,12 @@
 	0	Electric Piano 1
 	8	Synth Soft Electric Piano
 	9	Chorus Electric Piano
-	10	Silent Rhodes
+	10	Silent Rhodes Piano
 	16	FM + SA Electric Piano
 	17	Distortion Electric Piano
 	24	Wurly
-	25	Hard Rhodes
-	26	Mellow Rhodes
+	25	Hard Rhodes Piano
+	26	Mellow Rhodes Piano
 5
 	0	Electric Piano 2
 	1	Electric Piano 3
@@ -49,7 +49,7 @@
 	2	Harpsichord 3
 	8	Coupled Harpsichord
 	16	Harpsichord Wide
-	24	Harpsichord o
+	24	Harpsichord Overdriven
 	32	Synth Harpsichord
 7
 	0	Clavinet
@@ -59,7 +59,7 @@
 	8	Comp Clavinet
 	16	Resonant Clavinet
 	17	Phase Clavinet
-	24	Clavinet o
+	24	Clavinet Overdriven
 	32	Analog Clavinet
 	33	JP8 Clavinet 1
 	35	JP8 Clavinet 2
@@ -116,7 +116,7 @@
 	6	Full Organ 5
 	7	Full Organ 6
 	8	Tremolo Organ
-	9	Organ o
+	9	Organ Overdriven
 	10	Full Organ 7
 	11	Full Organ 8
 	12	Full Organ 9
@@ -133,7 +133,7 @@
 	30	JX-8P Organ
 	31	FM Organ
 	32	70's Electric Organ
-	33	Even Bar
+	33	Even Bar Organ
 	40	Organ Bass
 	48	5th Organ
 17
@@ -154,10 +154,10 @@
 18
 	0	Organ 3
 	8	Rotary Organ 1
-	16	Rotary Organ S
+	16	Rotary Organ Slow
 	17	Rock Organ 1
 	18	Rock Organ 2
-	24	Rotary Organ F
+	24	Rotary Organ Fast
 19
 	0	Church Organ 1
 	8	Church Organ 2
@@ -189,7 +189,7 @@
 24
 	0	Nylon String Guitar
 	8	Ukulele
-	16	Nylon String Guitar o
+	16	Nylon String Guitar Overdriven
 	24	Velo Harmonics
 	32	Nylon String Guitar 2
 	40	Lequint Guitar
@@ -209,27 +209,27 @@
 	8	Pedal Steel Guitar
 27
 	0	Clean Guitar
-	1	Clean Half
-	2	Open Hard 1
-	3	Open Hard 2
-	4	JC Clean Guitar
+	1	Clean Half Guitar
+	2	Open Hard Guitar 1
+	3	Open Hard Guitar 2
+	4	Stratocaster Clean Guitar
 	5	Attack Clean Guitar
 	8	Chorus Guitar
-	9	JC Chorus Guitar
-	16	TC Front Pick
-	17	TC Rear Pick
-	18	TC Clean ff
-	19	TC Clean 2:
-	20	LP Rear Pick
-	21	LP Rear 2
-	22	LP Rear Atack
+	9	Stratocaster Chorus Guitar
+	16	Telecaster Front Pick
+	17	Telecaster Rear Pick
+	18	Telecaster Clean ff
+	19	Telecaster Clean 2:
+	20	Les Paul Rear Pick
+	21	Les Paul Rear 2
+	22	Les Paul Rear Attack
 	23	Mid Tone Guitar
 	24	Chung Ruan
 	25	Chung Ruan 2
 28
 	0	Muted Guitar
 	1	Muted Distortion Guitar
-	2	TC Muted Guitar
+	2	Telecaster Muted Guitar
 	8	Funk Pop Guitar
 	16	Funk Guitar 2
 	24	Jazz Man
@@ -237,20 +237,20 @@
 	0	Overdrive Guitar
 	1	Overdrive Guitar 2
 	2	Overdrive Guitar 3
-	3	More Drive
+	3	More Drive Guitar
 	4	Guitar Pinch
-	5	Attack Drive
-	8	LP Overdrive Guitar
-	9	LP Overdrive Guitar:
-	10	LP Half Drive
-	11	LP Half Drive 2
-	12	LP Chorus
+	5	Attack Drive Guitar
+	8	Les Paul Overdrive Guitar
+	9	Les Paul Overdrive Guitar:
+	10	Les Paul Half Drive
+	11	Les Paul Half Drive 2
+	12	Les Paul Chorus
 30
 	0	Distortion Guitar
-	1	Distortion Guitar 2:
+	1	Distortion Guitar 2
 	2	Dazed Guitar
 	3	Distortion Guitar:
-	4	Distortion Fast:
+	4	Distortion Fast Guitar
 	5	Attack Dist
 	8	Feedback Guitar
 	9	Feedback Guitar 2
@@ -612,29 +612,29 @@
 	24	French Horn Rip
 61
 	0	Brass 1
-	1	Brass ff
+	1	Brass Fortissimo
 	2	Bones Section
-	3	Synth Brass ff
+	3	Synth Brass Fortissimo
 	4	Quad Brass1
 	5	Quad Brass2
 	8	Brass 2
 	9	Brass 3
-	10	Brass sfz
-	12	Brass sfz 2
+	10	Brass Sforzando
+	12	Brass Sforzando 2
 	14	Fat Pop Brass
 	16	Brass Fall
 	17	Trumpet Fall
 	24	Octave Brass
 	25	Brass + Reed
 	26	Fat + Reed
-	32	Orch Brass
-	33	Orch Brass 2
-	35	Synth  Fat Pop Brass
-	36	Synth  Orch Brass
-	37	Synth  Orch Brass 2
-	38	Synth  Orch Brass 3
+	32	Orchestra Brass
+	33	Orchestra Brass 2
+	35	Section Fat Pop Brass
+	36	Section Orchestra Brass
+	37	Section Orchestra Brass 2
+	38	Section Orchestra Brass 3
 62
-	0	Synth Brass1
+	0	Synth Brass 1
 	1	JUNO Brass
 	2	Stack Brass
 	3	SH-5 Brass
@@ -642,7 +642,7 @@
 	5	Jump Brass
 	8	Pro Brass
 	9	P5 Brass
-	10	Orch Synth Brass
+	10	Orchestra Synth Brass
 	16	Octave Synth Brass
 	17	Hybrid Brass
 	18	Octave Synth Brass 2
@@ -665,10 +665,10 @@
 
 64
 	0	Soprano Sax
-	8	Soprano Exp.
+	8	Soprano Sax Expressive
 65
 	0	Alto Sax
-	8	Alto Sax Exp.
+	8	Alto Sax Expressive
 	9	Grow Sax
 	16	Alto Sax + Trumpet
 	17	Sax Section
@@ -676,14 +676,14 @@
 	0	Tenor Sax
 	1	Tenor Sax:
 	8	Breathy Tenor Sax:
-	9	Synth  Tenor Sax
+	9	Synth Tenor Sax
 67
 	0	Baritone Sax
 	1	Baritone Sax:
 	8	Baritone & Tenor Sax
 68
 	0	Oboe
-	8	Oboe Exp.
+	8	Oboe Expressive
 	16	Multi Reed
 69
 	0	English Horn
@@ -704,7 +704,7 @@
 73
 	0	Flute
 	1	Flute 2:
-	2	Flute Exp.
+	2	Flute Expressive
 	3	Flute Travelso
 	8	Flute + Violin
 	9	Pipe & Reed
@@ -843,9 +843,9 @@
 	20	Dirty Sync
 	21	Dual Sync Lead
 	22	LA Brass Ld
-	24	JUNO Sub Osc
-	25	2600 Sub Osc
-	26	JP8000 Fd Osc
+	24	JUNO Sub Oscillator
+	25	2600 Sub Oscillator
+	26	JP8000 Fd Oscillator
 85
 	0	Solo Vox
 	1	Solo Vox 2
@@ -1091,7 +1091,7 @@
 	16	New Century
 	17	7th Atmosphere
 	18	Galaxy Way
-	19	Rising OSC.
+	19	Rising Oscillator
 
 104
 	0	Sitar
@@ -1273,10 +1273,10 @@
 	22	Acoustic Bass Mute Noise
 	23	Acoustic Bass Touch Noise
 	24	Acoustic Bass Atack Noise
-	25	TC Up Noise
-	26	TC Down Mt. Noise
-	27	TC Up Mt. Noise
-	28	TC Down Noise
+	25	Telecaster Up Noise
+	26	Telecaster Down Muted Noise
+	27	Telecaster Up Muted Noise
+	28	Telecaster Down Noise
 	29	Distortion Guitar Up Noise
 	30	Distortion Guitar Down Noise 1
 	31	Distortion Guitar Down Noise 2

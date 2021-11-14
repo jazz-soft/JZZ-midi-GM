@@ -1,0 +1,39 @@
+0
+	0	Standard Drum Kit
+	1	Standard Drum Kit 2
+	2	Standard Drum Kit L/R
+	8	Room Drum Kit
+	9	Hip hop Drum Kit
+	10	Jungle Drum Kit
+	11	Techno Drum Kit
+	12	Room Drum Kit L/R
+	13	House Drum Kit
+	16	Power Drum Kit
+	24	Electronic Drum Kit
+	25	TR-808 Drum Kit
+	26	Dance Drum Kit
+	27	CR-78 Drum Kit
+	28	TR-606 Drum Kit
+	29	TR-707 Drum Kit
+	30	TR-909 Drum Kit
+	32	Jazz Drum Kit
+	33	Jazz Drum Kit L/R
+	40	Brush Drum Kit
+	41	Brush Drum Kit 2
+	42	Brush Drum Kit 2 L/R
+	48	Orchestra Kit
+	49	Ethnic Drum Kit
+	50	Kick & Snare
+	51	Kick & Snare 2
+	52	Asia Drum Kit
+	53	Cymbal & Claps
+	54	Gamelan Kit 1
+	55	Gamelan Kit 2
+	56	SFX Kit
+	57	Rhythm FX
+	58	Rhythm FX 2
+	59	Rhythm FX 3
+	60	SFX Kit 2
+	61	Voice Kit
+	62	Cymbal & Claps 2
+	127	CM-64/CM-32L Kit
