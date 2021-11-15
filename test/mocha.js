@@ -121,6 +121,6 @@ describe('JZZ.MIDI.GM', function() {
     assert.equal(JZZ.MIDI.GM.allGS().length, 1261);
   });
   it('allXG()', function() {
-    assert.equal(JZZ.MIDI.GM.allXG().length, 1138);
+    assert.equal(JZZ.MIDI.GM.allXG().length, 1140);
   });
 });
