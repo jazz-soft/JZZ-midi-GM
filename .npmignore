@@ -1,8 +1,8 @@
 .*
 minified
-test
+test*
 data
 coverage
 Gruntfile.js
-test*
+eslint.config.mjs
 !test
