@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JZZ.midi.GM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="node_modules/jzz/javascript/JZZ.js"></script>
+<script src="node_modules/jzz-synth-tiny/javascript/JZZ.synth.Tiny.js"></script>
+<script src="node_modules/jzz-gui-select/javascript/JZZ.gui.Select.js"></script>
+<script src="node_modules/jzz-input-kbd/javascript/JZZ.input.Kbd.js"></script>
+<script src="minified/JZZ.midi.GM.js"></script>
+</head>
+
+<body>
+<h1>JZZ.midi.GM</h1>
+<p>
+<label for="midiout">MIDI Out:</label>
+<select id="midiout"></select>
+<label for="system">System:</label>
+<select id="system">
+ <option value="GM">GM</option>
+ <option value="GM2">GM2</option>
+ <option value="GS">GS</option>
+ <option value="XG">XG</option>
+</select>
+<label for="msb">Bank MSB:</label>
+<select id="msb"></select>
+<label for="lsb">Bank LSB:</label>
+<select id="lsb"></select>
+<label for="program">Program:</label>
+<select id="program"></select>
+</p>
+<p id="piano"></p>
+
+<script><!--
+JZZ.synth.Tiny.register('Web Audio');
+var midiout = JZZ.gui.SelectMidiOut({ at: 'midiout' });
+var piano = JZZ.input.Kbd({at: 'piano'});
+piano.connect(midiout);
+midiout.select();
+--></script>
+
+<p>
+<a href=https://jazz-soft.net>https://jazz-soft.net</a>
+</p>
+
+</body>
+</html>
