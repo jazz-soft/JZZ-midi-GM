@@ -26,8 +26,8 @@
 <select id="msb"></select>
 <label for="lsb">Bank LSB:</label>
 <select id="lsb"></select>
-<label for="program">Program:</label>
-<select id="program"></select>
+<label for="prog">Program:</label>
+<select id="prog"></select>
 </p>
 <p id="piano"></p>
 
@@ -37,6 +37,47 @@ var midiout = JZZ.gui.SelectMidiOut({ at: 'midiout' });
 var piano = JZZ.input.Kbd({at: 'piano'});
 piano.connect(midiout);
 midiout.select();
+
+var mySystem, myMsb, myLsb, myProg;
+var system = document.getElementById('system');
+var msb = document.getElementById('msb');
+var lsb = document.getElementById('lsb');
+var prog = document.getElementById('prog');
+system.addEventListener("change", onSystem);
+onSystem();
+
+function onSystem() {
+  var i;
+  mySystem = system.value;
+  if (mySystem == 'GM') {
+    myMsb = undefined;
+    myLsb = undefined;
+    myProg = 0;
+    clear(msb);
+    clear(lsb);
+    clear(prog);
+    add(msb, 0, '00', true);
+    add(lsb, 0, '00', true);
+    for (i = 0; i < 128; i++) add(prog, i, i.toString(16).padStart(2, '0') + ' ' + JZZ.MIDI.programName(i));
+  }
+  else {
+  }
+}
+
+function clear(sel) {
+  for (var i = sel.options.length; i > 0; i--) sel.remove(i - 1);
+}
+function add(sel, val, txt, dis) {
+   var opt = document.createElement('option');
+   opt.value = val;
+   opt.innerHTML = txt;
+   opt.disabled = !!dis;
+   sel.appendChild(opt);
+}
+//console.log(JZZ.MIDI.GM.allGM2());
+//console.log(JZZ.MIDI.GM.allGS());
+//console.log(JZZ.MIDI.GM.allXG());
+
 --></script>
 
 <p>
