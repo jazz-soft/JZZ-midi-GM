@@ -33,26 +33,33 @@
 
 <script><!--
 JZZ.synth.Tiny.register('Web Audio');
+var logger = JZZ.Widget({ _receive: function(msg) { console.log(msg.toString()); }});
+JZZ.addMidiOut('console.log', logger);
 var midiout = JZZ.gui.SelectMidiOut({ at: 'midiout' });
 var piano = JZZ.input.Kbd({at: 'piano'});
 piano.connect(midiout);
-midiout.select();
-
+midiout.onSelect = function() {
+  setSystem();
+  setMsb();
+  setLsb();
+  setProg();
+};
 var mySystem, myMsb, myLsb, myProg;
 var system = document.getElementById('system');
 var msb = document.getElementById('msb');
 var lsb = document.getElementById('lsb');
 var prog = document.getElementById('prog');
 var sys = { GM2: collect(JZZ.MIDI.GM.allGM2()), GS: collect(JZZ.MIDI.GM.allGS()), XG: collect(JZZ.MIDI.GM.allXG()) };
-
 system.addEventListener("change", onSystem);
 msb.addEventListener("change", onMsb);
 lsb.addEventListener("change", onLsb);
+prog.addEventListener("change", onProg);
+midiout.select();
 onSystem();
-
 function onSystem() {
   var i, x;
   mySystem = system.value;
+  setSystem();
   if (mySystem == 'GM') {
     myMsb = undefined;
     myLsb = undefined;
@@ -63,6 +70,7 @@ function onSystem() {
     add(msb, 0, '00', true);
     add(lsb, 0, '00', true);
     for (i = 0; i < 128; i++) add(prog, i, i.toString(16).padStart(2, '0') + ' ' + JZZ.MIDI.programName(i));
+    setProg();
   }
   else {
     x = sys[mySystem];
@@ -74,6 +82,7 @@ function onSystem() {
 function onMsb() {
   var i, x;
   myMsb = msb.value;
+  setMsb();
   x = sys[mySystem][myMsb];
   clear(lsb);
   for (i = 0; i < 128; i++) if (x[i]) add(lsb, i, i.toString(16).padStart(2, '0'));
@@ -82,6 +91,7 @@ function onMsb() {
 function onLsb() {
   var i, x;
   myLsb = lsb.value;
+  setLsb();
   x = sys[mySystem][myMsb][myLsb];
   clear(prog);
   for (i = 0; i < 128; i++) if (x[i]) add(prog, i, x[i]);
@@ -89,6 +99,7 @@ function onLsb() {
 }
 function onProg() {
   myProg = prog.value;
+  setProg();
 }
 function clear(sel) {
   for (var i = sel.options.length; i > 0; i--) sel.remove(i - 1);
@@ -106,12 +117,27 @@ function collect(a) {
   for (i = 0; i < a.length; i++) {
     if (!x[a[i][1]]) x[a[i][1]] = {};
     if (!x[a[i][1]][a[i][2]]) x[a[i][1]][a[i][2]] = {};
-    x[a[i][1]][a[i][2]][a[i][0]] = JZZ.MIDI.programName(a[i][0], a[i][1], a[i][2]);
+    x[a[i][1]][a[i][2]][a[i][0]] = a[i][0].toString(16).padStart(2, '0') + ' ' + JZZ.MIDI.programName(a[i][0], a[i][1], a[i][2]);
   }
   return x;
 }
+function setSystem() {
+  midiout.send({ GM: JZZ.MIDI.sxGM(), GM2: JZZ.MIDI.sxGM(2), GS: JZZ.MIDI.sxGS(), XG: JZZ.MIDI.sxXG() }[mySystem]);
+}
+function setMsb() {
+  if (typeof myMsb != 'undefined') midiout.bankMSB(0, myMsb);
+}
+function setLsb() {
+  if (typeof myLsb != 'undefined') midiout.bankLSB(0, myLsb);
+}
+function setProg() {
+  midiout.program(0, myProg);
+}
 --></script>
 
+<p>
+<em>NOTE: some instruments may not support certain systems or programs.</em>
+</p>
 <p>
 <a href=https://jazz-soft.net>https://jazz-soft.net</a>
 </p>
