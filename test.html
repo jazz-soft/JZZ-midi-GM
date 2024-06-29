@@ -43,11 +43,15 @@ var system = document.getElementById('system');
 var msb = document.getElementById('msb');
 var lsb = document.getElementById('lsb');
 var prog = document.getElementById('prog');
+var sys = { GM2: collect(JZZ.MIDI.GM.allGM2()), GS: collect(JZZ.MIDI.GM.allGS()), XG: collect(JZZ.MIDI.GM.allXG()) };
+
 system.addEventListener("change", onSystem);
+msb.addEventListener("change", onMsb);
+lsb.addEventListener("change", onLsb);
 onSystem();
 
 function onSystem() {
-  var i;
+  var i, x;
   mySystem = system.value;
   if (mySystem == 'GM') {
     myMsb = undefined;
@@ -61,23 +65,51 @@ function onSystem() {
     for (i = 0; i < 128; i++) add(prog, i, i.toString(16).padStart(2, '0') + ' ' + JZZ.MIDI.programName(i));
   }
   else {
+    x = sys[mySystem];
+    clear(msb);
+    for (i = 0; i < 128; i++) if (x[i]) add(msb, i, i.toString(16).padStart(2, '0'));
+    onMsb();
   }
 }
-
+function onMsb() {
+  var i, x;
+  myMsb = msb.value;
+  x = sys[mySystem][myMsb];
+  clear(lsb);
+  for (i = 0; i < 128; i++) if (x[i]) add(lsb, i, i.toString(16).padStart(2, '0'));
+  onLsb();
+}
+function onLsb() {
+  var i, x;
+  myLsb = lsb.value;
+  x = sys[mySystem][myMsb][myLsb];
+  clear(prog);
+  for (i = 0; i < 128; i++) if (x[i]) add(prog, i, x[i]);
+  onProg();
+}
+function onProg() {
+  myProg = prog.value;
+}
 function clear(sel) {
   for (var i = sel.options.length; i > 0; i--) sel.remove(i - 1);
 }
 function add(sel, val, txt, dis) {
-   var opt = document.createElement('option');
-   opt.value = val;
-   opt.innerHTML = txt;
-   opt.disabled = !!dis;
-   sel.appendChild(opt);
+  var opt = document.createElement('option');
+  opt.value = val;
+  opt.innerHTML = txt;
+  opt.disabled = !!dis;
+  sel.appendChild(opt);
 }
-//console.log(JZZ.MIDI.GM.allGM2());
-//console.log(JZZ.MIDI.GM.allGS());
-//console.log(JZZ.MIDI.GM.allXG());
-
+function collect(a) {
+  var i;
+  var x = {};
+  for (i = 0; i < a.length; i++) {
+    if (!x[a[i][1]]) x[a[i][1]] = {};
+    if (!x[a[i][1]][a[i][2]]) x[a[i][1]][a[i][2]] = {};
+    x[a[i][1]][a[i][2]][a[i][0]] = JZZ.MIDI.programName(a[i][0], a[i][1], a[i][2]);
+  }
+  return x;
+}
 --></script>
 
 <p>
