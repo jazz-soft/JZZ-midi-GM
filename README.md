@@ -132,6 +132,8 @@ JZZ().openMidiOut()
   .ch(9).noteOn('cowbell', 127);
 ```
 
-## More information
+## Demo
+[**https://jazz-soft.net/demo/GmGsXg.html**](https://jazz-soft.net/demo/GmGsXg.html)
 
+## More information
 Please visit [**https://jazz-soft.net**](https://jazz-soft.net) for more information.  
