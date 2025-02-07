@@ -5,4 +5,4 @@ data
 coverage
 Gruntfile.js
 eslint.config.mjs
-!test
+
